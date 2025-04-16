@@ -72,7 +72,7 @@ const TabFeatures: React.FC<Props> = ({ data, start, limit }) => {
                         ))}
                     </div>
                     <div className="block-button flex items-center justify-center w-full md:mt-10 mt-6">
-                        <Link href={'/shop/breadcrumb-img'} className='button-main text-center'>View All Products</Link>
+                        <Link href={'/shop/breadcrumb'} className='button-main text-center'>View All Products</Link>
                     </div>
                 </div>
             </div>

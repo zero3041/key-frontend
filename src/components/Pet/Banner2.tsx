@@ -19,7 +19,7 @@ const Banner2 = () => {
                     <div className="heading1 text-center">Make Your Pet Happy</div>
                     <div className="heading6 font-normal text-center mt-2">We Offer Quality Pet Services</div>
                     <div className="button-block text-center mt-8">
-                        <Link href={'/shop/breadcrumb-img'} className='button-main'>
+                        <Link href={'/shop/breadcrumb'} className='button-main'>
                             Shop Now
                         </Link>
                     </div>

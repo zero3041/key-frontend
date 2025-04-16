@@ -8,12 +8,12 @@ const Collection = () => {
             <div className="container">
                 <div className="heading flex items-center justify-between gap-5 flex-wrap">
                     <div className="heading3">Our Collections</div>
-                    <Link href='/shop/breadcrumb-img' className='text-button pb-0.5 border-b-2 border-black'>View All
+                    <Link href='/shop/breadcrumb' className='text-button pb-0.5 border-b-2 border-black'>View All
                     </Link>
                 </div>
                 <div className="list grid xl:grid-cols-4 sm:grid-cols-2 sm:gap-[30px] gap-[20px] md:mt-10 mt-6">
                     <div className="item flex gap-3 px-5 py-6 border border-line rounded-2xl">
-                        <Link href='/shop/breadcrumb-img' className='img-product w-[100px] h-[100px] flex-shrink-0'>
+                        <Link href='/shop/breadcrumb' className='img-product w-[100px] h-[100px] flex-shrink-0'>
                             <Image width={5000} height={5000} src='/images/collection/marketplace1.png' className='w-full h-full object-cover'
                                 alt='img' />
                         </Link>
@@ -38,14 +38,14 @@ const Collection = () => {
                                         className="has-line-before caption1 text-secondary hover:text-black">Postpaid Phones</Link>
                                 </li>
                             </ul>
-                            <Link href='/shop/breadcrumb-img' className='flex items-center gap-1.5 mt-4'>
+                            <Link href='/shop/breadcrumb' className='flex items-center gap-1.5 mt-4'>
                                 <span className="text-button">All Smartphone</span>
                                 <i className="ph-bold ph-caret-double-right text-sm"></i>
                             </Link>
                         </div>
                     </div>
                     <div className="item flex gap-3 px-5 py-6 border border-line rounded-2xl">
-                        <Link href='/shop/breadcrumb-img' className='img-product w-[100px] h-[100px] flex-shrink-0'>
+                        <Link href='/shop/breadcrumb' className='img-product w-[100px] h-[100px] flex-shrink-0'>
                             <Image width={5000} height={5000} src='/images/collection/marketplace2.png' className='w-full h-full object-cover'
                                 alt='img' />
                         </Link>
@@ -70,14 +70,14 @@ const Collection = () => {
                                         Accessories</Link>
                                 </li>
                             </ul>
-                            <Link href='/shop/breadcrumb-img' className='flex items-center gap-1.5 mt-4'>
+                            <Link href='/shop/breadcrumb' className='flex items-center gap-1.5 mt-4'>
                                 <span className="text-button">All Smartphone</span>
                                 <i className="ph-bold ph-caret-double-right text-sm"></i>
                             </Link>
                         </div>
                     </div>
                     <div className="item flex gap-3 px-5 py-6 border border-line rounded-2xl">
-                        <Link href='/shop/breadcrumb-img' className='img-product w-[100px] h-[100px] flex-shrink-0'>
+                        <Link href='/shop/breadcrumb' className='img-product w-[100px] h-[100px] flex-shrink-0'>
                             <Image width={5000} height={5000} src='/images/collection/marketplace3.png' className='w-full h-full object-cover'
                                 alt='img' />
                         </Link>
@@ -101,14 +101,14 @@ const Collection = () => {
                                         className="has-line-before caption1 text-secondary hover:text-black">Women Watches</Link>
                                 </li>
                             </ul>
-                            <Link href='/shop/breadcrumb-img' className='flex items-center gap-1.5 mt-4'>
+                            <Link href='/shop/breadcrumb' className='flex items-center gap-1.5 mt-4'>
                                 <span className="text-button">All Smartphone</span>
                                 <i className="ph-bold ph-caret-double-right text-sm"></i>
                             </Link>
                         </div>
                     </div>
                     <div className="item flex gap-3 px-5 py-6 border border-line rounded-2xl">
-                        <Link href='/shop/breadcrumb-img' className='img-product w-[100px] h-[100px] flex-shrink-0'>
+                        <Link href='/shop/breadcrumb' className='img-product w-[100px] h-[100px] flex-shrink-0'>
                             <Image width={5000} height={5000} src='/images/collection/marketplace4.png' className='w-full h-full object-cover'
                                 alt='img' />
                         </Link>
@@ -132,7 +132,7 @@ const Collection = () => {
                                         className="has-line-before caption1 text-secondary hover:text-black">Smartphones</Link>
                                 </li>
                             </ul>
-                            <Link href='/shop/breadcrumb-img' className='flex items-center gap-1.5 mt-4'>
+                            <Link href='/shop/breadcrumb' className='flex items-center gap-1.5 mt-4'>
                                 <span className="text-button">All Smartphone</span>
                                 <i className="ph-bold ph-caret-double-right text-sm"></i>
                             </Link>

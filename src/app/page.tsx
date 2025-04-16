@@ -1,38 +1,36 @@
 import React from 'react'
 import TopNavOne from '@/components/Header/TopNav/TopNavOne'
-import MenuOne from '@/components/Header/Menu/MenuOne'
-import SliderOne from '@/components/Slider/SliderOne'
-import WhatNewOne from '@/components/Home1/WhatNewOne'
+import MenuEight from '@/components/Header/Menu/MenuEight'
+import SliderEight from '@/components/Slider/SliderEight'
+import Collection from '@/components/Home8/Collection'
+import Deal from '@/components/Home7/Deal'
+import Banner from '@/components/Home8/Banner'
 import productData from '@/data/Product.json'
-import Collection from '@/components/Home1/Collection'
 import TabFeatures from '@/components/Home1/TabFeatures'
-import Banner from '@/components/Home1/Banner'
 import Benefit from '@/components/Home1/Benefit'
-import testimonialData from '@/data/Testimonial.json'
-import Testimonial from '@/components/Home1/Testimonial'
-import Instagram from '@/components/Home1/Instagram'
+import blogData from '@/data/Blog.json'
+import NewsInsight from '@/components/Home3/NewsInsight'
 import Brand from '@/components/Home1/Brand'
 import Footer from '@/components/Footer/Footer'
-import ModalNewsletter from '@/components/Modal/ModalNewsletter'
+// import ModalNewsletter from '@/components/Modal/ModalNewsletter'
 
-export default function Home() {
-  return (
-    <>
-      <TopNavOne props="style-one bg-black" slogan="New customers save 10% with the code GET10" />
-      <div id="header" className='relative w-full'>
-        <MenuOne props="bg-transparent" />
-        <SliderOne />
-      </div>
-      <WhatNewOne data={productData} start={0} limit={4} />
-      <Collection />
-      <TabFeatures data={productData} start={0} limit={6} />
-      <Banner />
-      <Benefit props="md:py-20 py-10" />
-      <Testimonial data={testimonialData} limit={6} />
-      <Instagram />
-      <Brand />
-      <Footer />
-      <ModalNewsletter />
-    </>
-  )
+export default function HomeEight() {
+    return (
+        <>
+            {/* <TopNavOne props="style-one bg-black" slogan='New customers save 10% with the code GET10' /> */}
+            <div id="header" className='relative w-full'>
+                <MenuEight />
+                <SliderEight />
+            </div>
+            {/*<Benefit props="md:pt-20 pt-10" />*/}
+            <Collection />
+            <Deal data={productData} start={0} limit={8} />
+            {/*<Banner />*/}
+            <TabFeatures data={productData} start={0} limit={8} />
+            {/*<NewsInsight data={blogData} start={0} limit={3} />*/}
+            <Brand />
+            <Footer />
+            {/* <ModalNewsletter /> */}
+        </>
+    )
 }

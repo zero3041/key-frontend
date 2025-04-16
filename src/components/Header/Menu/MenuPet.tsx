@@ -150,31 +150,31 @@ const MenuPet = () => {
                                     className={`sub-menu-department absolute top-[44px] left-0 right-0 h-max bg-white rounded-b-2xl ${openShopDepartmentPopup ? 'open' : ''}`}
                                 >
                                     <div className="item block">
-                                        <Link href={'/shop/breadcrumb-img'} className='caption1 py-4 px-5 border-b border-line whitespace-nowrap block'>Dog Food</Link>
+                                        <Link href={'/shop/breadcrumb'} className='caption1 py-4 px-5 border-b border-line whitespace-nowrap block'>Dog Food</Link>
                                     </div>
                                     <div className="item block">
-                                        <Link href={'/shop/breadcrumb-img'} className='caption1 py-4 px-5 border-b border-line whitespace-nowrap block'>Dog Outfits</Link>
+                                        <Link href={'/shop/breadcrumb'} className='caption1 py-4 px-5 border-b border-line whitespace-nowrap block'>Dog Outfits</Link>
                                     </div>
                                     <div className="item block">
-                                        <Link href={'/shop/breadcrumb-img'} className='caption1 py-4 px-5 border-b border-line whitespace-nowrap block'>Dog Toys</Link>
+                                        <Link href={'/shop/breadcrumb'} className='caption1 py-4 px-5 border-b border-line whitespace-nowrap block'>Dog Toys</Link>
                                     </div>
                                     <div className="item block">
-                                        <Link href={'/shop/breadcrumb-img'} className='caption1 py-4 px-5 border-b border-line whitespace-nowrap block'>Dog Accessory</Link>
+                                        <Link href={'/shop/breadcrumb'} className='caption1 py-4 px-5 border-b border-line whitespace-nowrap block'>Dog Accessory</Link>
                                     </div>
                                     <div className="item block">
-                                        <Link href={'/shop/breadcrumb-img'} className='caption1 py-4 px-5 border-b border-line whitespace-nowrap block'>Cat Food</Link>
+                                        <Link href={'/shop/breadcrumb'} className='caption1 py-4 px-5 border-b border-line whitespace-nowrap block'>Cat Food</Link>
                                     </div>
                                     <div className="item block">
-                                        <Link href={'/shop/breadcrumb-img'} className='caption1 py-4 px-5 border-b border-line whitespace-nowrap block'>Cat Outfits</Link>
+                                        <Link href={'/shop/breadcrumb'} className='caption1 py-4 px-5 border-b border-line whitespace-nowrap block'>Cat Outfits</Link>
                                     </div>
                                     <div className="item block">
-                                        <Link href={'/shop/breadcrumb-img'} className='caption1 py-4 px-5 border-b border-line whitespace-nowrap block'>Cat Toys</Link>
+                                        <Link href={'/shop/breadcrumb'} className='caption1 py-4 px-5 border-b border-line whitespace-nowrap block'>Cat Toys</Link>
                                     </div>
                                     <div className="item block">
-                                        <Link href={'/shop/breadcrumb-img'} className='caption1 py-4 px-5 border-b border-line whitespace-nowrap block'>Cat Accessory</Link>
+                                        <Link href={'/shop/breadcrumb'} className='caption1 py-4 px-5 border-b border-line whitespace-nowrap block'>Cat Accessory</Link>
                                     </div>
                                     <div className="item block">
-                                        <Link href={'/shop/breadcrumb-img'} className='caption1 py-4 px-5 whitespace-nowrap block'>Pet Services</Link>
+                                        <Link href={'/shop/breadcrumb'} className='caption1 py-4 px-5 whitespace-nowrap block'>Pet Services</Link>
                                     </div>
                                 </div>
                             </div>
@@ -550,8 +550,8 @@ const MenuPet = () => {
                                                             <ul>
                                                                 <li>
                                                                     <Link
-                                                                        href={'/shop/breadcrumb-img'}
-                                                                        className={`link text-secondary duration-300 ${pathname === '/shop/breadcrumb-img' ? 'active' : ''}`}
+                                                                        href={'/shop/breadcrumb'}
+                                                                        className={`link text-secondary duration-300 ${pathname === '/shop/breadcrumb' ? 'active' : ''}`}
                                                                     >
                                                                         Shop Breadcrumb IMG
                                                                     </Link>
@@ -1428,8 +1428,8 @@ const MenuPet = () => {
                                                             <ul>
                                                                 <li>
                                                                     <Link
-                                                                        href={'/shop/breadcrumb-img'}
-                                                                        className={`text-secondary duration-300 ${pathname === '/shop/breadcrumb-img' ? 'active' : ''}`}
+                                                                        href={'/shop/breadcrumb'}
+                                                                        className={`text-secondary duration-300 ${pathname === '/shop/breadcrumb' ? 'active' : ''}`}
                                                                     >
                                                                         Shop Breadcrumb IMG
                                                                     </Link>

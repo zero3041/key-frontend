@@ -83,7 +83,7 @@ const MenuEleven = () => {
                             <div className="form-search w-2/3 pl-8 flex items-center h-[44px] max-lg:hidden">
                                 <div className="category-block relative h-full">
                                     <div className="category-btn bg-black relative flex items-center gap-6 py-2 px-4 h-full rounded-l w-fit cursor-pointer">
-                                        <div className="text-button text-white whitespace-nowrap">All Categories</div>
+                                        <div className="text-button text-white whitespace-nowrap">Full Search</div>
                                         <Icon.CaretDown color='#ffffff' />
                                     </div>
                                 </div>
@@ -152,34 +152,34 @@ const MenuEleven = () => {
                                         className={`sub-menu-department shop-department-popup box-shadow-sm absolute top-[44px] left-0 right-0 h-max bg-white rounded-b-2xl ${openShopDepartmentPopup ? 'open' : ''}`}
                                     >
                                         <div className="item block">
-                                            <Link href={'/shop/breadcrumb-img'} className='py-1.5 whitespace-nowrap inline-block'>Men’s Clothing</Link>
+                                            <Link href={'/shop/breadcrumb'} className='py-1.5 whitespace-nowrap inline-block'>Men’s Clothing</Link>
                                         </div>
                                         <div className="item block">
-                                            <Link href={'/shop/breadcrumb-img'} className='py-1.5 whitespace-nowrap inline-block'>Women’s Clothing</Link>
+                                            <Link href={'/shop/breadcrumb'} className='py-1.5 whitespace-nowrap inline-block'>Women’s Clothing</Link>
                                         </div>
                                         <div className="item block">
-                                            <Link href={'/shop/breadcrumb-img'} className='py-1.5 whitespace-nowrap inline-block'>Accessories</Link>
+                                            <Link href={'/shop/breadcrumb'} className='py-1.5 whitespace-nowrap inline-block'>Accessories</Link>
                                         </div>
                                         <div className="item block">
-                                            <Link href={'/shop/breadcrumb-img'} className='py-1.5 whitespace-nowrap inline-block'>Bags & Backpacks</Link>
+                                            <Link href={'/shop/breadcrumb'} className='py-1.5 whitespace-nowrap inline-block'>Bags & Backpacks</Link>
                                         </div>
                                         <div className="item block">
-                                            <Link href={'/shop/breadcrumb-img'} className='py-1.5 whitespace-nowrap inline-block'>Shoes</Link>
+                                            <Link href={'/shop/breadcrumb'} className='py-1.5 whitespace-nowrap inline-block'>Shoes</Link>
                                         </div>
                                         <div className="item block">
-                                            <Link href={'/shop/breadcrumb-img'} className='py-1.5 whitespace-nowrap inline-block'>Jewelry</Link>
+                                            <Link href={'/shop/breadcrumb'} className='py-1.5 whitespace-nowrap inline-block'>Jewelry</Link>
                                         </div>
                                         <div className="item block">
-                                            <Link href={'/shop/breadcrumb-img'} className='py-1.5 whitespace-nowrap inline-block'>Watches</Link>
+                                            <Link href={'/shop/breadcrumb'} className='py-1.5 whitespace-nowrap inline-block'>Watches</Link>
                                         </div>
                                         <div className="item block">
-                                            <Link href={'/shop/breadcrumb-img'} className='py-1.5 whitespace-nowrap inline-block'>Beauty & Care</Link>
+                                            <Link href={'/shop/breadcrumb'} className='py-1.5 whitespace-nowrap inline-block'>Beauty & Care</Link>
                                         </div>
                                         <div className="item block">
-                                            <Link href={'/shop/breadcrumb-img'} className='py-1.5 whitespace-nowrap inline-block'>Pets</Link>
+                                            <Link href={'/shop/breadcrumb'} className='py-1.5 whitespace-nowrap inline-block'>Pets</Link>
                                         </div>
                                         <div className="item block">
-                                            <Link href={'/shop/breadcrumb-img'} className='py-1.5 whitespace-nowrap inline-block'>Kids & Baby</Link>
+                                            <Link href={'/shop/breadcrumb'} className='py-1.5 whitespace-nowrap inline-block'>Kids & Baby</Link>
                                         </div>
                                     </div>
                                 </div>
@@ -706,8 +706,8 @@ const MenuEleven = () => {
                                                                 <ul>
                                                                     <li>
                                                                         <Link
-                                                                            href={'/shop/breadcrumb-img'}
-                                                                            className={`link text-secondary duration-300 ${pathname === '/shop/breadcrumb-img' ? 'active' : ''}`}
+                                                                            href={'/shop/breadcrumb'}
+                                                                            className={`link text-secondary duration-300 ${pathname === '/shop/breadcrumb' ? 'active' : ''}`}
                                                                         >
                                                                             Shop Breadcrumb IMG
                                                                         </Link>
@@ -1691,8 +1691,8 @@ const MenuEleven = () => {
                                                             <ul>
                                                                 <li>
                                                                     <Link
-                                                                        href={'/shop/breadcrumb-img'}
-                                                                        className={`text-secondary duration-300 ${pathname === '/shop/breadcrumb-img' ? 'active' : ''}`}
+                                                                        href={'/shop/breadcrumb'}
+                                                                        className={`text-secondary duration-300 ${pathname === '/shop/breadcrumb' ? 'active' : ''}`}
                                                                     >
                                                                         Shop Breadcrumb IMG
                                                                     </Link>

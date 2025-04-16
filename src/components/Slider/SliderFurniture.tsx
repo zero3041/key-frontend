@@ -31,7 +31,7 @@ const SliderFurniture = () => {
                                     <div className="text-content sm:w-[55%] w-2/3">
                                         <div className="text-display text-center md:mt-5 mt-2">Furniture that Transforms Your Home</div>
                                         <div className="body1 mt-4 text-center">Check out our latest collection of chic and trendy outfits that will keep you looking stylish all year round.</div>
-                                        <Link href='/shop/breadcrumb-img' className="button-main bg-green text-black md:mt-4 mt-3">Shop Now</Link>
+                                        <Link href='/shop/breadcrumb' className="button-main bg-green text-black md:mt-4 mt-3">Shop Now</Link>
                                     </div>
                                     <div className="sub-img absolute left-0 top-0 w-full h-full z-[-1]">
                                         <Image
@@ -52,7 +52,7 @@ const SliderFurniture = () => {
                                     <div className="text-content sm:w-[55%] w-2/3">
                                         <div className="text-display text-center md:mt-5 mt-2">Experience the Beauty of Effective Skincare</div>
                                         <div className="body1 mt-4 text-center">Check out our latest collection of chic and trendy outfits that will keep you looking stylish all year round.</div>
-                                        <Link href='/shop/breadcrumb-img' className="button-main bg-green text-black md:mt-4 mt-3">Shop Now</Link>
+                                        <Link href='/shop/breadcrumb' className="button-main bg-green text-black md:mt-4 mt-3">Shop Now</Link>
                                     </div>
                                     <div className="sub-img absolute left-0 top-0 w-full h-full z-[-1]">
                                         <Image
@@ -73,7 +73,7 @@ const SliderFurniture = () => {
                                     <div className="text-content sm:w-[55%] w-2/3">
                                         <div className="text-display text-center text-white md:mt-5 mt-2">Elevate Your Skincare Journey</div>
                                         <div className="body1 mt-4 text-white text-center">Check out our latest collection of chic and trendy outfits that will keep you looking stylish all year round.</div>
-                                        <Link href='/shop/breadcrumb-img' className="button-main bg-green text-black md:mt-4 mt-3">Shop Now</Link>
+                                        <Link href='/shop/breadcrumb' className="button-main bg-green text-black md:mt-4 mt-3">Shop Now</Link>
                                     </div>
                                     <div className="sub-img absolute left-0 top-0 w-full h-full z-[-1]">
                                         <Image

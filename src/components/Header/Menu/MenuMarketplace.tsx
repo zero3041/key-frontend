@@ -123,7 +123,7 @@ const MenuMarketplace = () => {
                                     <div
                                         className={`sub-menu-department style-marketplace absolute top-[84px] left-0 right-0 px-[26px] py-[5px] bg-surface rounded-xl border border-line ${openSubMenuDepartment ? 'open' : ''}`}
                                     >
-                                        <Link href='/shop/breadcrumb-img'
+                                        <Link href='/shop/breadcrumb'
                                             className="item py-3 whitespace-nowrap border-b border-line w-full flex items-center justify-between">
                                             <span className="flex items-center gap-2">
                                                 <Icon.DesktopTower className="text-xl" />
@@ -131,7 +131,7 @@ const MenuMarketplace = () => {
                                             </span>
                                             <Icon.CaretRight />
                                         </Link>
-                                        <Link href='/shop/breadcrumb-img'
+                                        <Link href='/shop/breadcrumb'
                                             className="item py-3 whitespace-nowrap border-b border-line w-full flex items-center justify-between">
                                             <span className="flex items-center gap-2">
                                                 <Icon.DeviceTabletCamera className="text-xl" />
@@ -139,7 +139,7 @@ const MenuMarketplace = () => {
                                             </span>
                                             <Icon.CaretRight />
                                         </Link>
-                                        <Link href='/shop/breadcrumb-img'
+                                        <Link href='/shop/breadcrumb'
                                             className="item py-3 whitespace-nowrap border-b border-line w-full flex items-center justify-between">
                                             <span className="flex items-center gap-2">
                                                 <Icon.Printer className="text-xl" />
@@ -147,7 +147,7 @@ const MenuMarketplace = () => {
                                             </span>
                                             <Icon.CaretRight />
                                         </Link>
-                                        <Link href='/shop/breadcrumb-img'
+                                        <Link href='/shop/breadcrumb'
                                             className="item py-3 whitespace-nowrap border-b border-line w-full flex items-center justify-between">
                                             <span className="flex items-center gap-2">
                                                 <Icon.DeviceMobileSpeaker className="text-xl" />
@@ -155,7 +155,7 @@ const MenuMarketplace = () => {
                                             </span>
                                             <Icon.CaretRight />
                                         </Link>
-                                        <Link href='/shop/breadcrumb-img'
+                                        <Link href='/shop/breadcrumb'
                                             className="item py-3 whitespace-nowrap border-b border-line w-full flex items-center justify-between">
                                             <span className="flex items-center gap-2">
                                                 <Icon.Keyboard className="text-xl" />
@@ -163,7 +163,7 @@ const MenuMarketplace = () => {
                                             </span>
                                             <Icon.CaretRight />
                                         </Link>
-                                        <Link href='/shop/breadcrumb-img'
+                                        <Link href='/shop/breadcrumb'
                                             className="item py-3 whitespace-nowrap border-b border-line w-full flex items-center justify-between">
                                             <span className="flex items-center gap-2">
                                                 <Icon.GameController className="text-xl" />
@@ -171,7 +171,7 @@ const MenuMarketplace = () => {
                                             </span>
                                             <Icon.CaretRight />
                                         </Link>
-                                        <Link href='/shop/breadcrumb-img'
+                                        <Link href='/shop/breadcrumb'
                                             className="item py-3 whitespace-nowrap border-b border-line w-full flex items-center justify-between">
                                             <span className="flex items-center gap-2">
                                                 <Icon.PersonArmsSpread className="text-xl" />
@@ -179,7 +179,7 @@ const MenuMarketplace = () => {
                                             </span>
                                             <Icon.CaretRight />
                                         </Link>
-                                        <Link href='/shop/breadcrumb-img'
+                                        <Link href='/shop/breadcrumb'
                                             className="item py-3 whitespace-nowrap border-b border-line w-full flex items-center justify-between">
                                             <span className="flex items-center gap-2">
                                                 <Icon.Watch className="text-xl" />
@@ -187,7 +187,7 @@ const MenuMarketplace = () => {
                                             </span>
                                             <Icon.CaretRight />
                                         </Link>
-                                        <Link href='/shop/breadcrumb-img'
+                                        <Link href='/shop/breadcrumb'
                                             className="item py-3 whitespace-nowrap w-full flex items-center justify-between">
                                             <span className="flex items-center gap-2">
                                                 <Icon.Headphones className="text-xl" />
@@ -569,8 +569,8 @@ const MenuMarketplace = () => {
                                                                 <ul>
                                                                     <li>
                                                                         <Link
-                                                                            href={'/shop/breadcrumb-img'}
-                                                                            className={`link text-secondary duration-300 ${pathname === '/shop/breadcrumb-img' ? 'active' : ''}`}
+                                                                            href={'/shop/breadcrumb'}
+                                                                            className={`link text-secondary duration-300 ${pathname === '/shop/breadcrumb' ? 'active' : ''}`}
                                                                         >
                                                                             Shop Breadcrumb IMG
                                                                         </Link>
@@ -1449,8 +1449,8 @@ const MenuMarketplace = () => {
                                                             <ul>
                                                                 <li>
                                                                     <Link
-                                                                        href={'/shop/breadcrumb-img'}
-                                                                        className={`text-secondary duration-300 ${pathname === '/shop/breadcrumb-img' ? 'active' : ''}`}
+                                                                        href={'/shop/breadcrumb'}
+                                                                        className={`text-secondary duration-300 ${pathname === '/shop/breadcrumb' ? 'active' : ''}`}
                                                                     >
                                                                         Shop Breadcrumb IMG
                                                                     </Link>

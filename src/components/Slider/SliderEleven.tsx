@@ -39,7 +39,7 @@ const SliderEleven = () => {
                                         <div className="text-button-uppercase">Fresh and Tasty</div>
                                         <div className="heading2 lg:mt-3 mt-2">New Season Women’s style</div>
                                         <div className="body1 lg:mt-4 mt-3">Discover the beauty of fashion living</div>
-                                        <Link href='/shop/breadcrumb-img' className="button-main lg:mt-8 mt-3">Shop Now</Link>
+                                        <Link href='/shop/breadcrumb' className="button-main lg:mt-8 mt-3">Shop Now</Link>
                                     </div>
                                     <div className="sub-img absolute xl:right-[50px] lg:right-[20px] md:right-[40px] sm:right-[20px] -right-10 top-0 bottom-0">
                                         <Image
@@ -59,7 +59,7 @@ const SliderEleven = () => {
                                         <div className="text-button-uppercase">Fresh and Tasty</div>
                                         <div className="heading2 lg:mt-3 mt-2">Men’s Clothing fashion</div>
                                         <div className="body1 lg:mt-4 mt-3">Discover the beauty of fashion living</div>
-                                        <Link href='/shop/breadcrumb-img' className="button-main lg:mt-8 mt-3">Shop Now</Link>
+                                        <Link href='/shop/breadcrumb' className="button-main lg:mt-8 mt-3">Shop Now</Link>
                                     </div>
                                     <div className="sub-img absolute xl:w-[45%] lg:w-[53%] md:w-[33%] sm:w-[40%] w-[45%] max-[460px]:w-[80%] xl:right-[30px] lg:right-0 sm:right-[20px] -right-[80px] bottom-0">
                                         <Image
@@ -79,7 +79,7 @@ const SliderEleven = () => {
                                         <div className="text-button-uppercase">Fresh and Tasty</div>
                                         <div className="heading2 lg:mt-3 mt-2">Summer Sale Collections</div>
                                         <div className="body1 lg:mt-4 mt-3">Discover the beauty of fashion living</div>
-                                        <Link href='/shop/breadcrumb-img' className="button-main lg:mt-8 mt-3">Shop Now</Link>
+                                        <Link href='/shop/breadcrumb' className="button-main lg:mt-8 mt-3">Shop Now</Link>
                                     </div>
                                     <div className="sub-img absolute xl:w-[49%] lg:w-[57%] md:w-[36%] sm:w-[43%] w-[46%] max-[460px]:w-[80%] xl:right-[20px] lg:-right-5 sm:right-[20px] -right-[60px] bottom-0">
                                         <Image

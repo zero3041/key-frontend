@@ -19,7 +19,7 @@ const TopProduct = () => {
             <div className="container">
                 <div className="heading flex items-center justify-between gap-5 flex-wrap">
                     <div className="heading3">Top Rated Products</div>
-                    <Link href='/shop/breadcrumb-img' className='text-button pb-0.5 border-b-2 border-black'>View All
+                    <Link href='/shop/breadcrumb' className='text-button pb-0.5 border-b-2 border-black'>View All
                     </Link>
                 </div>
                 <div className="list grid xl:grid-cols-3 sm:grid-cols-2 gap-4 md:mt-10 mt-6">

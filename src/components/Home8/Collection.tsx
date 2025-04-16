@@ -18,7 +18,7 @@ const Collection = () => {
         <>
             <div className="collection-block md:pt-20 pt-10">
                 <div className="container">
-                    <div className="heading3 text-center">Explore Collections</div>
+                    <div className="heading3 text-center">Khám phá các bộ sưu tập</div>
                     <div className="list-collection section-swiper-navigation style-outline style-center style-small-border md:mt-10 mt-6">
                         <Swiper
                             spaceBetween={12}
@@ -56,7 +56,7 @@ const Collection = () => {
                                             alt='swimwear'
                                         />
                                     </div>
-                                    <div className="collection-name heading6 text-center sm:bottom-5 bottom-3 lg:w-[140px] md:w-[120px] w-[100px] md:py-1.5 py-1 bg-white rounded-xl duration-500">swimwear</div>
+                                    <div className="collection-name heading6 text-center sm:bottom-5 bottom-3 lg:w-[140px] md:w-[120px] w-[100px] md:py-1.5 py-1 bg-white rounded-xl duration-500">Netflix and chill</div>
                                 </div>
                             </SwiperSlide>
                             <SwiperSlide>
@@ -69,7 +69,7 @@ const Collection = () => {
                                             alt='clothes'
                                         />
                                     </div>
-                                    <div className="collection-name heading6 text-center sm:bottom-5 bottom-3 lg:w-[140px] md:w-[120px] w-[100px] md:py-1.5 py-1 bg-white rounded-xl duration-500">top</div>
+                                    <div className="collection-name heading6 text-center sm:bottom-5 bottom-3 lg:w-[140px] md:w-[120px] w-[100px] md:py-1.5 py-1 bg-white rounded-xl duration-500">AI</div>
                                 </div>
                             </SwiperSlide>
                             <SwiperSlide>
@@ -82,7 +82,7 @@ const Collection = () => {
                                             alt='sets'
                                         />
                                     </div>
-                                    <div className="collection-name heading6 text-center sm:bottom-5 bottom-3 lg:w-[140px] md:w-[120px] w-[100px] md:py-1.5 py-1 bg-white rounded-xl duration-500">sets</div>
+                                    <div className="collection-name heading6 text-center sm:bottom-5 bottom-3 lg:w-[140px] md:w-[120px] w-[100px] md:py-1.5 py-1 bg-white rounded-xl duration-500">Design</div>
                                 </div>
                             </SwiperSlide>
                             <SwiperSlide>
@@ -95,7 +95,7 @@ const Collection = () => {
                                             alt='accessories'
                                         />
                                     </div>
-                                    <div className="collection-name heading6 text-center sm:bottom-5 bottom-3 lg:w-[140px] md:w-[120px] w-[100px] md:py-1.5 py-1 bg-white rounded-xl duration-500">outerwear</div>
+                                    <div className="collection-name heading6 text-center sm:bottom-5 bottom-3 lg:w-[140px] md:w-[120px] w-[100px] md:py-1.5 py-1 bg-white rounded-xl duration-500">Compilot</div>
                                 </div>
                             </SwiperSlide>
                             <SwiperSlide>
@@ -108,7 +108,7 @@ const Collection = () => {
                                             alt='lingerie'
                                         />
                                     </div>
-                                    <div className="collection-name heading6 text-center sm:bottom-5 bottom-3 lg:w-[140px] md:w-[120px] w-[100px] md:py-1.5 py-1 bg-white rounded-xl duration-500">underwear</div>
+                                    <div className="collection-name heading6 text-center sm:bottom-5 bottom-3 lg:w-[140px] md:w-[120px] w-[100px] md:py-1.5 py-1 bg-white rounded-xl duration-500">Khác</div>
                                 </div>
                             </SwiperSlide>
                             <SwiperSlide>

@@ -78,20 +78,20 @@ const MenuEight = () => {
                             <i className="icon-category text-2xl"></i>
                         </div>
                         <Link href={'/'} className='flex items-center'>
-                            <div className="heading4">Anvogue</div>
+                            <div className="heading4">Push</div>
                         </Link>
                         <div className="form-search w-2/3 pl-8 flex items-center h-[44px] max-lg:hidden">
                             <div className="category-block relative h-full">
-                                <div className="category-btn bg-black relative flex items-center gap-6 py-2 px-4 h-full rounded-l w-fit cursor-pointer">
-                                    <div className="text-button text-white whitespace-nowrap">All Categories</div>
-                                    <Icon.CaretDown color='#ffffff' />
-                                </div>
+                                {/*<div className="category-btn bg-black relative flex items-center gap-6 py-2 px-4 h-full rounded-l w-fit cursor-pointer">*/}
+                                {/*    <div className="text-button text-white whitespace-nowrap">All Categories</div>*/}
+                                {/*    <Icon.CaretDown color='#ffffff' />*/}
+                                {/*</div>*/}
                             </div>
                             <div className='w-full flex items-center h-full'>
                                 <input
                                     type="text"
                                     className="search-input h-full px-4 w-full border border-line"
-                                    placeholder="What are you looking for today?"
+                                    placeholder="Bạn muốn tìm gì"
                                     value={searchKeyword}
                                     onChange={(e) => setSearchKeyword(e.target.value)}
                                     onKeyDown={(e) => e.key === 'Enter' && handleSearch(searchKeyword)}
@@ -102,7 +102,7 @@ const MenuEight = () => {
                                         handleSearch(searchKeyword)
                                     }}
                                 >
-                                    Search
+                                    Tìm kiếm
                                 </button>
                             </div>
                         </div>
@@ -145,41 +145,47 @@ const MenuEight = () => {
                                     className="menu-department-btn bg-black relative flex items-center sm:gap-16 gap-4 px-4 h-full w-fit cursor-pointer"
                                     onClick={handleSubMenuDepartment}
                                 >
-                                    <div className="text-button-uppercase text-white whitespace-nowrap">Department</div>
+                                    <div className="text-button-uppercase text-white whitespace-nowrap">Danh mục</div>
                                     <Icon.CaretDown color='#ffffff' className='text-xl max-sm:text-base' />
                                 </div>
                                 <div
                                     className={`sub-menu-department absolute top-[44px] left-0 right-0 h-max bg-white rounded-b-2xl ${openSubMenuDepartment ? 'open' : ''}`}
                                 >
                                     <div className="item block">
-                                        <Link href={'/shop/breadcrumb-img'} className='py-1.5 whitespace-nowrap inline-block'>Men’s Clothing</Link>
+                                        <Link href={'/shop/breadcrumb'} className='py-1.5 whitespace-nowrap inline-block'>Best Seller</Link>
                                     </div>
                                     <div className="item block">
-                                        <Link href={'/shop/breadcrumb-img'} className='py-1.5 whitespace-nowrap inline-block'>Women’s Clothing</Link>
+                                        <Link href={'/shop/breadcrumb'} className='py-1.5 whitespace-nowrap inline-block'>IT</Link>
                                     </div>
                                     <div className="item block">
-                                        <Link href={'/shop/breadcrumb-img'} className='py-1.5 whitespace-nowrap inline-block'>Accessories</Link>
+                                        <Link href={'/shop/breadcrumb'} className='py-1.5 whitespace-nowrap inline-block'>Giải trí</Link>
                                     </div>
                                     <div className="item block">
-                                        <Link href={'/shop/breadcrumb-img'} className='py-1.5 whitespace-nowrap inline-block'>Bags & Backpacks</Link>
+                                        <Link href={'/shop/breadcrumb'} className='py-1.5 whitespace-nowrap inline-block'>Truyền Hình/TV</Link>
                                     </div>
                                     <div className="item block">
-                                        <Link href={'/shop/breadcrumb-img'} className='py-1.5 whitespace-nowrap inline-block'>Shoes</Link>
+                                        <Link href={'/shop/breadcrumb'} className='py-1.5 whitespace-nowrap inline-block'>Học tập giáo dục</Link>
                                     </div>
                                     <div className="item block">
-                                        <Link href={'/shop/breadcrumb-img'} className='py-1.5 whitespace-nowrap inline-block'>Jewelry</Link>
+                                        <Link href={'/shop/breadcrumb'} className='py-1.5 whitespace-nowrap inline-block'>Microsoft</Link>
                                     </div>
                                     <div className="item block">
-                                        <Link href={'/shop/breadcrumb-img'} className='py-1.5 whitespace-nowrap inline-block'>Watches</Link>
+                                        <Link href={'/shop/breadcrumb'} className='py-1.5 whitespace-nowrap inline-block'>Lưu trữ</Link>
                                     </div>
                                     <div className="item block">
-                                        <Link href={'/shop/breadcrumb-img'} className='py-1.5 whitespace-nowrap inline-block'>Beauty & Care</Link>
+                                        <Link href={'/shop/breadcrumb'} className='py-1.5 whitespace-nowrap inline-block'>Design Creative</Link>
                                     </div>
                                     <div className="item block">
-                                        <Link href={'/shop/breadcrumb-img'} className='py-1.5 whitespace-nowrap inline-block'>Pets</Link>
+                                        <Link href={'/shop/breadcrumb'} className='py-1.5 whitespace-nowrap inline-block'>AI</Link>
                                     </div>
                                     <div className="item block">
-                                        <Link href={'/shop/breadcrumb-img'} className='py-1.5 whitespace-nowrap inline-block'>Kids & Baby</Link>
+                                        <Link href={'/shop/breadcrumb'} className='py-1.5 whitespace-nowrap inline-block'>Công Việc</Link>
+                                    </div>
+                                    <div className="item block">
+                                        <Link href={'/shop/breadcrumb'} className='py-1.5 whitespace-nowrap inline-block'>VPN/Antivirus</Link>
+                                    </div>
+                                    <div className="item block">
+                                        <Link href={'/shop/breadcrumb'} className='py-1.5 whitespace-nowrap inline-block'>Khác</Link>
                                     </div>
                                 </div>
                             </div>
@@ -191,9 +197,9 @@ const MenuEight = () => {
                                             className={`text-button-uppercase duration-300 h-full flex items-center justify-center gap-1 
                                             ${pathname.includes('/homepages/') ? 'active' : ''}`}
                                         >
-                                            Demo
+                                            Trang chủ
                                         </Link>
-                                        <div className="sub-menu absolute py-3 px-5 -left-10 w-max grid grid-cols-4 gap-5 bg-white rounded-b-xl">
+                                        {/* <div className="sub-menu absolute py-3 px-5 -left-10 w-max grid grid-cols-4 gap-5 bg-white rounded-b-xl">
                                             <ul>
                                                 <li>
                                                     <Link href="/" className='text-secondary duration-300'>
@@ -328,7 +334,7 @@ const MenuEight = () => {
                                                     </Link>
                                                 </li>
                                             </ul>
-                                        </div>
+                                        </div> */}
                                     </li>
                                     <li className='h-full'>
                                         <Link href="#!" className='text-button-uppercase duration-300 h-full flex items-center justify-center'>
@@ -706,8 +712,8 @@ const MenuEight = () => {
                                                             <ul>
                                                                 <li>
                                                                     <Link
-                                                                        href={'/shop/breadcrumb-img'}
-                                                                        className={`link text-secondary duration-300 ${pathname === '/shop/breadcrumb-img' ? 'active' : ''}`}
+                                                                        href={'/shop/breadcrumb'}
+                                                                        className={`link text-secondary duration-300 ${pathname === '/shop/breadcrumb' ? 'active' : ''}`}
                                                                     >
                                                                         Shop Breadcrumb IMG
                                                                     </Link>
@@ -1171,10 +1177,10 @@ const MenuEight = () => {
                                 </ul>
                             </div>
                         </div>
-                        <div className="right flex items-center gap-1">
+                        {/* <div className="right flex items-center gap-1">
                             <div className="caption1">Hotline:</div>
                             <div className="text-button-uppercase">+01 1234 8888</div>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </div>
@@ -1690,8 +1696,8 @@ const MenuEight = () => {
                                                             <ul>
                                                                 <li>
                                                                     <Link
-                                                                        href={'/shop/breadcrumb-img'}
-                                                                        className={`text-secondary duration-300 ${pathname === '/shop/breadcrumb-img' ? 'active' : ''}`}
+                                                                        href={'/shop/breadcrumb'}
+                                                                        className={`text-secondary duration-300 ${pathname === '/shop/breadcrumb' ? 'active' : ''}`}
                                                                     >
                                                                         Shop Breadcrumb IMG
                                                                     </Link>

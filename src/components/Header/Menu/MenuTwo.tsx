@@ -596,8 +596,8 @@ const MenuTwo = () => {
                                                         <ul>
                                                             <li>
                                                                 <Link
-                                                                    href={'/shop/breadcrumb-img'}
-                                                                    className={`link text-secondary duration-300 ${pathname === '/shop/breadcrumb-img' ? 'active' : ''}`}
+                                                                    href={'/shop/breadcrumb'}
+                                                                    className={`link text-secondary duration-300 ${pathname === '/shop/breadcrumb' ? 'active' : ''}`}
                                                                 >
                                                                     Shop Breadcrumb IMG
                                                                 </Link>
@@ -1605,8 +1605,8 @@ const MenuTwo = () => {
                                                             <ul>
                                                                 <li>
                                                                     <Link
-                                                                        href={'/shop/breadcrumb-img'}
-                                                                        className={`text-secondary duration-300 ${pathname === '/shop/breadcrumb-img' ? 'active' : ''}`}
+                                                                        href={'/shop/breadcrumb'}
+                                                                        className={`text-secondary duration-300 ${pathname === '/shop/breadcrumb' ? 'active' : ''}`}
                                                                     >
                                                                         Shop Breadcrumb IMG
                                                                     </Link>

@@ -7,7 +7,7 @@ const BannerBelow = () => {
         <div className="banner-block md:pt-[60px] pt-8">
             <div className="container">
                 <div className="list-banner grid sm:grid-cols-2 lg:gap-[30px] gap-[20px]">
-                    <Link href='/shop/breadcrumb-img'
+                    <Link href='/shop/breadcrumb'
                         className="banner-item relative py-[53.5px] px-10 bg-[#848EFF] block duration-500 rounded-2xl overflow-hidden">
                         <div className="banner-img w-[173px] absolute top-1/2 -translate-y-1/2 right-14">
                             <Image width={5000} height={5000} src='/images/banner/marketplace4.png' className='w-full duration-500' alt='img' />
@@ -20,7 +20,7 @@ const BannerBelow = () => {
                                 Shop Now</div>
                         </div>
                     </Link>
-                    <Link href='/shop/breadcrumb-img'
+                    <Link href='/shop/breadcrumb'
                         className="banner-item relative py-[53.5px] px-10 bg-[#E7514A] block duration-500 rounded-2xl overflow-hidden">
                         <div className="banner-img w-1/2 absolute top-1/2 -translate-y-1/2 right-10">
                             <Image width={5000} height={5000} src='/images/banner/marketplace5.png' className='w-full duration-500' alt='img' />

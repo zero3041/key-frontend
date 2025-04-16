@@ -152,28 +152,28 @@ const MenuOrganic = () => {
                                         className={`sub-menu-department shop-department-popup box-shadow-sm absolute top-[44px] left-0 right-0 h-max bg-white rounded-b-2xl ${openShopDepartmentPopup ? 'open' : ''}`}
                                     >
                                         <div className="item block">
-                                            <Link href={'/shop/breadcrumb-img'} className='py-1.5 whitespace-nowrap inline-block'>Vegetables</Link>
+                                            <Link href={'/shop/breadcrumb'} className='py-1.5 whitespace-nowrap inline-block'>Vegetables</Link>
                                         </div>
                                         <div className="item block">
-                                            <Link href={'/shop/breadcrumb-img'} className='py-1.5 whitespace-nowrap inline-block'>Fruits</Link>
+                                            <Link href={'/shop/breadcrumb'} className='py-1.5 whitespace-nowrap inline-block'>Fruits</Link>
                                         </div>
                                         <div className="item block">
-                                            <Link href={'/shop/breadcrumb-img'} className='py-1.5 whitespace-nowrap inline-block'>Organic Meats</Link>
+                                            <Link href={'/shop/breadcrumb'} className='py-1.5 whitespace-nowrap inline-block'>Organic Meats</Link>
                                         </div>
                                         <div className="item block">
-                                            <Link href={'/shop/breadcrumb-img'} className='py-1.5 whitespace-nowrap inline-block'>Organic Fish</Link>
+                                            <Link href={'/shop/breadcrumb'} className='py-1.5 whitespace-nowrap inline-block'>Organic Fish</Link>
                                         </div>
                                         <div className="item block">
-                                            <Link href={'/shop/breadcrumb-img'} className='py-1.5 whitespace-nowrap inline-block'>Cabbage</Link>
+                                            <Link href={'/shop/breadcrumb'} className='py-1.5 whitespace-nowrap inline-block'>Cabbage</Link>
                                         </div>
                                         <div className="item block">
-                                            <Link href={'/shop/breadcrumb-img'} className='py-1.5 whitespace-nowrap inline-block'>Drinks</Link>
+                                            <Link href={'/shop/breadcrumb'} className='py-1.5 whitespace-nowrap inline-block'>Drinks</Link>
                                         </div>
                                         <div className="item block">
-                                            <Link href={'/shop/breadcrumb-img'} className='py-1.5 whitespace-nowrap inline-block'>Smoothies</Link>
+                                            <Link href={'/shop/breadcrumb'} className='py-1.5 whitespace-nowrap inline-block'>Smoothies</Link>
                                         </div>
                                         <div className="item block">
-                                            <Link href={'/shop/breadcrumb-img'} className='py-1.5 whitespace-nowrap inline-block'>Tubers</Link>
+                                            <Link href={'/shop/breadcrumb'} className='py-1.5 whitespace-nowrap inline-block'>Tubers</Link>
                                         </div>
                                     </div>
                                 </div>
@@ -549,8 +549,8 @@ const MenuOrganic = () => {
                                                                 <ul>
                                                                     <li>
                                                                         <Link
-                                                                            href={'/shop/breadcrumb-img'}
-                                                                            className={`link text-secondary duration-300 ${pathname === '/shop/breadcrumb-img' ? 'active' : ''}`}
+                                                                            href={'/shop/breadcrumb'}
+                                                                            className={`link text-secondary duration-300 ${pathname === '/shop/breadcrumb' ? 'active' : ''}`}
                                                                         >
                                                                             Shop Breadcrumb IMG
                                                                         </Link>
@@ -1429,8 +1429,8 @@ const MenuOrganic = () => {
                                                             <ul>
                                                                 <li>
                                                                     <Link
-                                                                        href={'/shop/breadcrumb-img'}
-                                                                        className={`text-secondary duration-300 ${pathname === '/shop/breadcrumb-img' ? 'active' : ''}`}
+                                                                        href={'/shop/breadcrumb'}
+                                                                        className={`text-secondary duration-300 ${pathname === '/shop/breadcrumb' ? 'active' : ''}`}
                                                                     >
                                                                         Shop Breadcrumb IMG
                                                                     </Link>

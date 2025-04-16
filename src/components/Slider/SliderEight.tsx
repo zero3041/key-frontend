@@ -31,7 +31,7 @@ const SliderEight = () => {
                                     <div className="text-content basis-1/2">
                                         <div className="text-sub-display">Sale! Up To 50% Off!</div>
                                         <div className="heading1 md:mt-5 mt-2">Find Your Perfect Look with Ease</div>
-                                        <Link href='/shop/breadcrumb-img' className="button-main md:mt-8 mt-3">Shop Now</Link>
+                                        <Link href='/shop/breadcrumb' className="button-main md:mt-8 mt-3">Shop Now</Link>
                                     </div>
                                     <div className="sub-img absolute lg:w-[54%] sm:w-3/5 w-[92%] lg:-right-[100px] -right-[60px] bottom-0">
                                         <Image
@@ -52,7 +52,7 @@ const SliderEight = () => {
                                     <div className="text-content basis-1/2">
                                         <div className="text-sub-display">Sale! Up To 50% Off!</div>
                                         <div className="heading1 md:mt-5 mt-2">Where Style Meets Creativity</div>
-                                        <Link href='/shop/breadcrumb-img' className="button-main md:mt-8 mt-3">Shop Now</Link>
+                                        <Link href='/shop/breadcrumb' className="button-main md:mt-8 mt-3">Shop Now</Link>
                                     </div>
                                     <div className="sub-img absolute z-[-1] xl:w-[55%] sm:w-3/5 w-[86%] xl:-right-[100px] sm:-right-[40px] -right-[40px] sm:-bottom-7 bottom-0">
                                         <Image
@@ -73,7 +73,7 @@ const SliderEight = () => {
                                     <div className="text-content basis-1/2">
                                         <div className="text-sub-display">Sale! Up To 50% Off!</div>
                                         <div className="heading1 md:mt-5 mt-2">Stay Ahead of the Trends</div>
-                                        <Link href='/shop/breadcrumb-img' className="button-main md:mt-8 mt-3">Shop Now</Link>
+                                        <Link href='/shop/breadcrumb' className="button-main md:mt-8 mt-3">Shop Now</Link>
                                     </div>
                                     <div className="sub-img absolute lg:w-[57%] sm:w-[63%] w-[90%] xl:-right-[130px] lg:-right-[80px] md:-right-[50px] -right-[50px] bottom-0 md:-bottom-[30px]">
                                         <Image

@@ -23,7 +23,7 @@ const SliderUnderwear = () => {
                         <div className="text-sub-display text-center">Sale! Up To 50% Off!</div>
                         <div className="text-display text-center md:mt-4 mt-2">Transform Your <br />Look This <br />summer</div>
                         <div className="text-center">
-                            <Link href='/shop/breadcrumb-img' className="button-main md:mt-8 mt-3">Shop Now</Link>
+                            <Link href='/shop/breadcrumb' className="button-main md:mt-8 mt-3">Shop Now</Link>
                         </div>
                     </div>
                     <div className="sub-img w-[440px] max-md:w-1/2 rounded-t-full overflow-hidden">

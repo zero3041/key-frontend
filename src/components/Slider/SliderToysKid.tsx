@@ -41,7 +41,7 @@ const SliderToysKid = () => {
                                 <div className="text-content sm:w-1/3 max-sm:pt-10 max-sm:pb-[70px] flex flex-col items-center justify-center z-[1]">
                                     <div className="text-sub-display">Sale! Up To 50% Off!</div>
                                     <div className="heading1 text-center md:mt-4 mt-2">Smart toys <br className="max-xl:hidden" />on sale</div>
-                                    <Link href='/shop/breadcrumb-img' className="button-main md:mt-8 mt-3">Shop Now</Link>
+                                    <Link href='/shop/breadcrumb' className="button-main md:mt-8 mt-3">Shop Now</Link>
                                 </div>
                                 <div className="sub-img sm:w-2/3 w-full h-full sm:pl-10">
                                     <Image
@@ -66,7 +66,7 @@ const SliderToysKid = () => {
                                 <div className="text-content sm:w-1/3 max-sm:pt-10 max-sm:pb-[70px] flex flex-col items-center justify-center z-[1]">
                                     <div className="text-sub-display">Sale! Up To 50% Off!</div>
                                     <div className="heading1 text-center md:mt-4 mt-2">blankets for newborns</div>
-                                    <Link href='/shop/breadcrumb-img' className="button-main md:mt-8 mt-3">Shop Now</Link>
+                                    <Link href='/shop/breadcrumb' className="button-main md:mt-8 mt-3">Shop Now</Link>
                                 </div>
                                 <div className="sub-img sm:w-2/3 w-full h-full sm:pl-10">
                                     <Image
@@ -91,7 +91,7 @@ const SliderToysKid = () => {
                                 <div className="text-content sm:w-1/3 max-sm:pt-10 max-sm:pb-[70px] flex flex-col items-center justify-center z-[1]">
                                     <div className="text-sub-display">Sale! Up To 50% Off!</div>
                                     <div className="heading1 text-center md:mt-4 mt-2">Kids Toys & Clothing</div>
-                                    <Link href='/shop/breadcrumb-img' className="button-main md:mt-8 mt-3">Shop Now</Link>
+                                    <Link href='/shop/breadcrumb' className="button-main md:mt-8 mt-3">Shop Now</Link>
                                 </div>
                                 <div className="sub-img sm:w-2/3 w-full h-full sm:pl-10">
                                     <Image

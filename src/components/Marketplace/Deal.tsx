@@ -45,7 +45,7 @@ const Deal = () => {
                             </div>
                         </div>
                     </div>
-                    <a href='/shop/breadcrumb-img' className='text-button pb-1 border-b-2 border-black'>View All Deals
+                    <a href='/shop/breadcrumb' className='text-button pb-1 border-b-2 border-black'>View All Deals
                     </a>
                 </div>
                 <div

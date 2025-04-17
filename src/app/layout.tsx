@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { Instrument_Sans } from 'next/font/google'
+import localFont from 'next/font/local'
 import '@/styles/styles.scss'
 import GlobalProvider from './GlobalProvider'
 import ModalCart from '@/components/Modal/ModalCart'
@@ -12,7 +12,31 @@ import { countdownTime } from '@/store/countdownTime'
 
 const serverTimeLeft: CountdownTimeType = countdownTime();
 
-const instrument = Instrument_Sans({ subsets: ['latin'] })
+const ganhType = localFont({
+  src: [
+    {
+      path: '../../public/fonts/ganh-type-regular.otf',
+      weight: '400',
+      style: 'normal',
+    },
+    {
+      path: '../../public/fonts/ganh-type-regularitalic.otf',
+      weight: '400',
+      style: 'italic',
+    },
+    {
+      path: '../../public/fonts/ganh-type-thin.otf',
+      weight: '100',
+      style: 'normal',
+    },
+    {
+      path: '../../public/fonts/ganh-type-thinitalic.otf',
+      weight: '100',
+      style: 'italic',
+    },
+  ],
+  variable: '--font-ganh-type',
+})
 
 export const metadata: Metadata = {
   title: 'Circle Store',
@@ -25,17 +49,17 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <GlobalProvider>
-      <html lang="en">
-        <body className={instrument.className}>
+    <html lang="en" className={ganhType.variable}>
+      <body>
+        <GlobalProvider>
           {children}
           <ModalCart serverTimeLeft={serverTimeLeft} />
           <ModalWishlist />
           <ModalSearch />
           <ModalQuickview />
           <ModalCompare />
-        </body>
-      </html>
-    </GlobalProvider>
+        </GlobalProvider>
+      </body>
+    </html>
   )
 }

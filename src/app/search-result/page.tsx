@@ -122,7 +122,7 @@ const SearchResult = () => {
                         <div className="heading6">product Search: {query}</div>
                         <div className={`list-product hide-product-sold grid lg:grid-cols-4 sm:grid-cols-3 grid-cols-2 sm:gap-[30px] gap-[20px] mt-5`}>
                             {currentProducts.map((item) => (
-                                item.id === 'no-data' ? (
+                                String(item.id) === 'no-data' ? (
                                     <div key={item.id} className="no-data-product">No products match the selected criteria.</div>
                                 ) : (
                                     <Product key={item.id} data={item} type='grid' style={''} />

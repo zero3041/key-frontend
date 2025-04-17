@@ -12,9 +12,12 @@ import blogData from '@/data/Blog.json'
 import NewsInsight from '@/components/Home3/NewsInsight'
 import Brand from '@/components/Home1/Brand'
 import Footer from '@/components/Footer/Footer'
+import {ProductType} from "@/type/ProductType";
+import {normalizeProductData} from "@/utils/dataHelpers";
 // import ModalNewsletter from '@/components/Modal/ModalNewsletter'
 
 export default function HomeEight() {
+    const normalizedProducts = normalizeProductData(productData);
     return (
         <>
             {/* <TopNavOne props="style-one bg-black" slogan='New customers save 10% with the code GET10' /> */}
@@ -24,9 +27,9 @@ export default function HomeEight() {
             </div>
             {/*<Benefit props="md:pt-20 pt-10" />*/}
             <Collection />
-            <Deal data={productData} start={0} limit={8} />
+            <Deal data={normalizedProducts} start={0} limit={8} />
             {/*<Banner />*/}
-            <TabFeatures data={productData} start={0} limit={8} />
+            <TabFeatures data={normalizedProducts} start={0} limit={8} />
             {/*<NewsInsight data={blogData} start={0} limit={3} />*/}
             {/*<Brand />*/}
             <Footer />

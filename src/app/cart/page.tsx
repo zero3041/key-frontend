@@ -25,10 +25,10 @@ const Cart = () => {
 
     const { cartState, updateCart, removeFromCart } = useCart();
 
-    const handleQuantityChange = (productId: string, newQuantity: number) => {
+    const handleQuantityChange = (productId: number, newQuantity: number) => {
         // Tìm sản phẩm trong giỏ hàng
         const itemToUpdate = cartState.cartArray.find(
-            (item) => item.id === Number(productId)
+            (item) => item.id === productId
         );
 
         // Kiểm tra xem sản phẩm có tồn tại không

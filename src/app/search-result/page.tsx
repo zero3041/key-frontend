@@ -18,7 +18,7 @@ const SearchResult = () => {
     const [currentPage, setCurrentPage] = useState(0);
     const productsPerPage = 8;
     const offset = currentPage * productsPerPage;
-    let filteredData = productData
+    let filteredData: ProductType[] = productData as ProductType[]
 
     const router = useRouter()
 
@@ -36,22 +36,22 @@ const SearchResult = () => {
         filteredData = productData.filter((product) =>
             product.name.toLowerCase().includes(query.toLowerCase()) ||
             product.type.toLowerCase().includes(query.toLowerCase())
-        );
+        ) as ProductType[];
     }
 
     if (filteredData.length === 0) {
         filteredData = [{
-            id: 'no-data',
+            id: 1,
             category: 'no-data',
             type: 'no-data',
             name: 'no-data',
-            gender: 'no-data',
+            gender: 'no-data', // Sửa từ null thành string để khớp với kiểu ProductType
             new: false,
             sale: false,
             rate: 0,
             price: 0,
             originPrice: 0,
-            brand: 'no-data',
+            brand: null,
             sold: 0,
             quantity: 0,
             quantityPurchase: 0,
@@ -61,8 +61,9 @@ const SearchResult = () => {
             images: [],
             description: 'no-data',
             action: 'no-data',
-            slug: 'no-data'
-        }];
+            slug: 'no-data',
+            time: 'no-data'
+        } as ProductType]; // Thêm ép kiểu cho đối tượng này
     }
 
 
@@ -80,7 +81,7 @@ const SearchResult = () => {
     if (filteredData.length > 0) {
         currentProducts = filteredData.slice(offset, offset + productsPerPage);
     } else {
-        currentProducts = []
+        currentProducts = [] as ProductType[];
     }
 
     const handlePageChange = (selected: number) => {
@@ -122,7 +123,7 @@ const SearchResult = () => {
                         <div className="heading6">product Search: {query}</div>
                         <div className={`list-product hide-product-sold grid lg:grid-cols-4 sm:grid-cols-3 grid-cols-2 sm:gap-[30px] gap-[20px] mt-5`}>
                             {currentProducts.map((item) => (
-                                String(item.id) === 'no-data' ? (
+                                item.id === 1 && item.category === 'no-data' ? (
                                     <div key={item.id} className="no-data-product">No products match the selected criteria.</div>
                                 ) : (
                                     <Product key={item.id} data={item} type='grid' style={''} />

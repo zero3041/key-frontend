@@ -164,73 +164,73 @@ const BestSaleProduct: React.FC<Props> = ({ data }) => {
                             )}
                             <div className='desc text-secondary mt-3'>{productMain.description}</div>
                         </div>
-                        <div className="list-action mt-6">
-                            <div className="choose-color">
-                                <div className="text-title">Colors: <span className='text-title color'>{activeColor}</span></div>
-                                <div className="list-color flex items-center gap-2 flex-wrap mt-3">
-                                    {productMain.variation.map((item, index) => (
-                                        <div
-                                            className={`color-item w-12 h-12 rounded-xl duration-300 relative ${activeColor === item.color ? 'active' : ''}`}
-                                            key={index}
-                                            onClick={() => handleActiveColor(item.color)}
-                                        >
-                                            <Image
-                                                src={item.colorImage}
-                                                width={100}
-                                                height={100}
-                                                alt='color'
-                                                className='rounded-xl'
-                                            />
-                                            <div className="tag-action bg-black text-white caption2 capitalize px-1.5 py-0.5 rounded-sm">
-                                                {item.color}
-                                            </div>
-                                        </div>
-                                    ))}
-                                </div>
-                            </div>
-                            <div className="choose-size mt-5">
-                                <div className="heading flex items-center justify-between">
-                                    <div className="text-title">Size: <span className='text-title size'>{activeSize}</span></div>
-                                    <div
-                                        className="caption1 size-guide text-red underline cursor-pointer"
-                                        onClick={handleOpenSizeGuide}
-                                    >
-                                        Size Guide
-                                    </div>
-                                    <ModalSizeguide data={productMain} isOpen={openSizeGuide} onClose={handleCloseSizeGuide} />
-                                </div>
-                                <div className="list-size flex items-center gap-2 flex-wrap mt-3">
-                                    {productMain.sizes.map((item, index) => (
-                                        <div
-                                            className={`size-item w-12 h-12 flex items-center justify-center text-button rounded-full bg-white border border-line ${activeSize === item ? 'active' : ''}`}
-                                            key={index}
-                                            onClick={() => handleActiveSize(item)}
-                                        >
-                                            {item}
-                                        </div>
-                                    ))}
-                                </div>
-                            </div>
-                            <div className="choose-quantity flex items-center lg:justify-between gap-5 gap-y-3 mt-5">
-                                <div className="quantity-block md:p-3 p-2 flex items-center justify-between rounded-lg border border-line w-[140px] flex-shrink-0">
-                                    <Icon.Minus
-                                        size={20}
-                                        onClick={handleDecreaseQuantity}
-                                        className={`${productMain.quantityPurchase === 1 ? 'disabled' : ''} cursor-pointer`}
-                                    />
-                                    <div className="body1 font-semibold">{productMain.quantityPurchase}</div>
-                                    <Icon.Plus
-                                        size={20}
-                                        onClick={handleIncreaseQuantity}
-                                        className='cursor-pointer'
-                                    />
-                                </div>
-                                <div onClick={handleAddToCart} className="button-main w-full text-center bg-white text-black border border-black">Add To Cart</div>
-                            </div>
-                            <div className="button-block mt-5">
-                                <div className="button-main w-full text-center">Buy It Now</div>
-                            </div>
-                        </div>
+                        {/*<div className="list-action mt-6">*/}
+                        {/*    <div className="choose-color">*/}
+                        {/*        <div className="text-title">Colors: <span className='text-title color'>{activeColor}</span></div>*/}
+                        {/*        <div className="list-color flex items-center gap-2 flex-wrap mt-3">*/}
+                        {/*            {productMain.variation.map((item, index) => (*/}
+                        {/*                <div*/}
+                        {/*                    className={`color-item w-12 h-12 rounded-xl duration-300 relative ${activeColor === item.color ? 'active' : ''}`}*/}
+                        {/*                    key={index}*/}
+                        {/*                    onClick={() => handleActiveColor(item.color)}*/}
+                        {/*                >*/}
+                        {/*                    <Image*/}
+                        {/*                        src={item.colorImage}*/}
+                        {/*                        width={100}*/}
+                        {/*                        height={100}*/}
+                        {/*                        alt='color'*/}
+                        {/*                        className='rounded-xl'*/}
+                        {/*                    />*/}
+                        {/*                    <div className="tag-action bg-black text-white caption2 capitalize px-1.5 py-0.5 rounded-sm">*/}
+                        {/*                        {item.color}*/}
+                        {/*                    </div>*/}
+                        {/*                </div>*/}
+                        {/*            ))}*/}
+                        {/*        </div>*/}
+                        {/*    </div>*/}
+                        {/*    <div className="choose-size mt-5">*/}
+                        {/*        <div className="heading flex items-center justify-between">*/}
+                        {/*            <div className="text-title">Size: <span className='text-title size'>{activeSize}</span></div>*/}
+                        {/*            <div*/}
+                        {/*                className="caption1 size-guide text-red underline cursor-pointer"*/}
+                        {/*                onClick={handleOpenSizeGuide}*/}
+                        {/*            >*/}
+                        {/*                Size Guide*/}
+                        {/*            </div>*/}
+                        {/*            <ModalSizeguide data={productMain} isOpen={openSizeGuide} onClose={handleCloseSizeGuide} />*/}
+                        {/*        </div>*/}
+                        {/*        <div className="list-size flex items-center gap-2 flex-wrap mt-3">*/}
+                        {/*            {productMain.sizes.map((item, index) => (*/}
+                        {/*                <div*/}
+                        {/*                    className={`size-item w-12 h-12 flex items-center justify-center text-button rounded-full bg-white border border-line ${activeSize === item ? 'active' : ''}`}*/}
+                        {/*                    key={index}*/}
+                        {/*                    onClick={() => handleActiveSize(item)}*/}
+                        {/*                >*/}
+                        {/*                    {item}*/}
+                        {/*                </div>*/}
+                        {/*            ))}*/}
+                        {/*        </div>*/}
+                        {/*    </div>*/}
+                        {/*    <div className="choose-quantity flex items-center lg:justify-between gap-5 gap-y-3 mt-5">*/}
+                        {/*        <div className="quantity-block md:p-3 p-2 flex items-center justify-between rounded-lg border border-line w-[140px] flex-shrink-0">*/}
+                        {/*            <Icon.Minus*/}
+                        {/*                size={20}*/}
+                        {/*                onClick={handleDecreaseQuantity}*/}
+                        {/*                className={`${productMain.quantityPurchase === 1 ? 'disabled' : ''} cursor-pointer`}*/}
+                        {/*            />*/}
+                        {/*            <div className="body1 font-semibold">{productMain.quantityPurchase}</div>*/}
+                        {/*            <Icon.Plus*/}
+                        {/*                size={20}*/}
+                        {/*                onClick={handleIncreaseQuantity}*/}
+                        {/*                className='cursor-pointer'*/}
+                        {/*            />*/}
+                        {/*        </div>*/}
+                        {/*        <div onClick={handleAddToCart} className="button-main w-full text-center bg-white text-black border border-black">Add To Cart</div>*/}
+                        {/*    </div>*/}
+                        {/*    <div className="button-block mt-5">*/}
+                        {/*        <div className="button-main w-full text-center">Buy It Now</div>*/}
+                        {/*    </div>*/}
+                        {/*</div>*/}
                     </div>
                 </div>
             </div>

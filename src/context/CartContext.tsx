@@ -27,8 +27,8 @@ type CartAction =
 interface CartContextProps {
     cartState: CartState;
     addToCart: (item: ProductType) => void;
-    removeFromCart: (itemId: string) => void;
-    updateCart: (itemId: string, quantity: number, selectedSize: string, selectedColor: string) => void;
+    removeFromCart: (itemId: number) => void;
+    updateCart: (itemId: number, quantity: number, selectedSize: string, selectedColor: string) => void;
 }
 
 const CartContext = createContext<CartContextProps | undefined>(undefined);

@@ -10,13 +10,13 @@ export interface ProductType {
   category: string;
   type: string;
   name: string;
-  gender: string;
-  new: boolean;
+  gender: string | null;
+  new: boolean | string;
   sale: boolean;
   rate: number;
   price: number;
   originPrice: number;
-  brand: string;
+  brand: string | null;
   sold: number;
   quantity: number;
   quantityPurchase: number;

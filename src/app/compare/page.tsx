@@ -14,6 +14,7 @@ import { useCompare } from '@/context/CompareContext'
 import { useCart } from '@/context/CartContext'
 import { useModalCartContext } from '@/context/ModalCartContext'
 import Rate from '@/components/Other/Rate'
+import {formatVND} from "@/components/Product/formatVND";
 
 const Compare = () => {
     const { compareState } = useCompare();
@@ -32,10 +33,10 @@ const Compare = () => {
 
     return (
         <>
-            <TopNavOne props="style-one bg-black" slogan="New customers save 10% with the code GET10" />
+            {/*<TopNavOne props="style-one bg-black" slogan="New customers save 10% with the code GET10" />*/}
             <div id="header" className='relative w-full'>
                 <MenuOne props="bg-transparent" />
-                <Breadcrumb heading='Compare Products' subHeading='Compare Products' />
+                <Breadcrumb heading='So Sánh Sản Phẩm' subHeading='So Sánh Sản Phẩm' />
             </div>
             <div className="compare-block md:py-20 py-10">
                 <div className="container">
@@ -63,14 +64,14 @@ const Compare = () => {
                             </div>
                             <div className="compare-table flex">
                                 <div className="left lg:w-[240px] w-[170px] flex-shrink-0 border border-line border-r-0 rounded-l-2xl">
-                                    <div className="item text-button flex items-center h-[60px] px-8 w-full border-b border-line">Rating</div>
-                                    <div className="item text-button flex items-center h-[60px] px-8 w-full border-b border-line">Price</div>
-                                    <div className="item text-button flex items-center h-[60px] px-8 w-full border-b border-line">Type</div>
-                                    <div className="item text-button flex items-center h-[60px] px-8 w-full border-b border-line">Brand</div>
-                                    <div className="item text-button flex items-center h-[60px] px-8 w-full border-b border-line">Size</div>
-                                    <div className="item text-button flex items-center h-[60px] px-8 w-full border-b border-line">Colors</div>
-                                    <div className="item text-button flex items-center h-[60px] px-8 w-full border-b border-line">Metarial</div>
-                                    <div className="item text-button flex items-center h-[60px] px-8 w-full border-b border-line">Add To Cart</div>
+                                    <div className="item text-button flex items-center h-[60px] px-8 w-full border-b border-line">Đánh giá</div>
+                                    <div className="item text-button flex items-center h-[60px] px-8 w-full border-b border-line">Giá</div>
+                                    <div className="item text-button flex items-center h-[60px] px-8 w-full border-b border-line">Loại</div>
+                                    {/*<div className="item text-button flex items-center h-[60px] px-8 w-full border-b border-line">Hãng</div>*/}
+                                    {/*<div className="item text-button flex items-center h-[60px] px-8 w-full border-b border-line">Size</div>*/}
+                                    {/*<div className="item text-button flex items-center h-[60px] px-8 w-full border-b border-line">Colors</div>*/}
+                                    {/*<div className="item text-button flex items-center h-[60px] px-8 w-full border-b border-line">Metarial</div>*/}
+                                    {/*<div className="item text-button flex items-center h-[60px] px-8 w-full border-b border-line">Add To Cart</div>*/}
                                 </div>
                                 <table className="right border-collapse w-full border-t border-r border-line">
                                     <tr className={`flex w-full items-center`}>
@@ -87,7 +88,7 @@ const Compare = () => {
                                         {compareState.compareArray.map((item, index) => (
                                             <td className="w-full border border-line h-[60px] border-t-0 border-r-0" key={index}>
                                                 <div className='h-full flex items-center justify-center'>
-                                                    ${item.price}.00
+                                                    {formatVND(item.price)}
                                                 </div>
                                             </td>
                                         ))}
@@ -101,61 +102,61 @@ const Compare = () => {
                                             </td>
                                         ))}
                                     </tr>
-                                    <tr className={`flex w-full items-center`}>
-                                        {compareState.compareArray.map((item, index) => (
-                                            <td className="w-full border border-line h-[60px] border-t-0 border-r-0" key={index}>
-                                                <div className='h-full flex items-center justify-center capitalize'>
-                                                    {item.brand}
-                                                </div>
-                                            </td>
-                                        ))}
-                                    </tr>
-                                    <tr className={`flex w-full items-center`}>
-                                        {compareState.compareArray.map((item, index) => (
-                                            <td className="w-full border border-line h-[60px] border-t-0 border-r-0 size" key={index}>
-                                                <div className='h-full flex items-center justify-center capitalize gap-1'>
-                                                    {item.sizes.map((size, i) => (
-                                                        <p key={i}>{size}
-                                                            <span>,</span>
-                                                        </p>
-                                                    ))}
-                                                </div>
-                                            </td>
-                                        ))}
-                                    </tr>
-                                    <tr className={`flex w-full items-center`}>
-                                        {compareState.compareArray.map((item, index) => (
-                                            <td className="w-full border border-line h-[60px] border-t-0 border-r-0 size" key={index}>
-                                                <div className='h-full flex items-center justify-center capitalize gap-2'>
-                                                    {item.variation.map((colorItem, i) => (
-                                                        <span
-                                                            key={i}
-                                                            className={`w-6 h-6 rounded-full`}
-                                                            style={{backgroundColor: `${colorItem.colorCode}`}}
-                                                        ></span>
-                                                    ))}
-                                                </div>
-                                            </td>
-                                        ))}
-                                    </tr>
-                                    <tr className={`flex w-full items-center`}>
-                                        {compareState.compareArray.map((item, index) => (
-                                            <td className="w-full border border-line h-[60px] border-t-0 border-r-0" key={index}>
-                                                <div className='h-full flex items-center justify-center capitalize'>
-                                                    Cotton
-                                                </div>
-                                            </td>
-                                        ))}
-                                    </tr>
-                                    <tr className={`flex w-full items-center`}>
-                                        {compareState.compareArray.map((item, index) => (
-                                            <td className="w-full border border-line h-[60px] border-t-0 border-r-0" key={index}>
-                                                <div className='h-full flex items-center justify-center'>
-                                                    <div className='button-main py-1.5 px-5' onClick={() => handleAddToCart(item)}>Add To Cart</div>
-                                                </div>
-                                            </td>
-                                        ))}
-                                    </tr>
+                                    {/*<tr className={`flex w-full items-center`}>*/}
+                                    {/*    {compareState.compareArray.map((item, index) => (*/}
+                                    {/*        <td className="w-full border border-line h-[60px] border-t-0 border-r-0" key={index}>*/}
+                                    {/*            <div className='h-full flex items-center justify-center capitalize'>*/}
+                                    {/*                {item.brand}*/}
+                                    {/*            </div>*/}
+                                    {/*        </td>*/}
+                                    {/*    ))}*/}
+                                    {/*</tr>*/}
+                                    {/*<tr className={`flex w-full items-center`}>*/}
+                                    {/*    {compareState.compareArray.map((item, index) => (*/}
+                                    {/*        <td className="w-full border border-line h-[60px] border-t-0 border-r-0 size" key={index}>*/}
+                                    {/*            <div className='h-full flex items-center justify-center capitalize gap-1'>*/}
+                                    {/*                {item.sizes.map((size, i) => (*/}
+                                    {/*                    <p key={i}>{size}*/}
+                                    {/*                        <span>,</span>*/}
+                                    {/*                    </p>*/}
+                                    {/*                ))}*/}
+                                    {/*            </div>*/}
+                                    {/*        </td>*/}
+                                    {/*    ))}*/}
+                                    {/*</tr>*/}
+                                    {/*<tr className={`flex w-full items-center`}>*/}
+                                    {/*    {compareState.compareArray.map((item, index) => (*/}
+                                    {/*        <td className="w-full border border-line h-[60px] border-t-0 border-r-0 size" key={index}>*/}
+                                    {/*            <div className='h-full flex items-center justify-center capitalize gap-2'>*/}
+                                    {/*                {item.variation.map((colorItem, i) => (*/}
+                                    {/*                    <span*/}
+                                    {/*                        key={i}*/}
+                                    {/*                        className={`w-6 h-6 rounded-full`}*/}
+                                    {/*                        style={{backgroundColor: `${colorItem.colorCode}`}}*/}
+                                    {/*                    ></span>*/}
+                                    {/*                ))}*/}
+                                    {/*            </div>*/}
+                                    {/*        </td>*/}
+                                    {/*    ))}*/}
+                                    {/*</tr>*/}
+                                    {/*<tr className={`flex w-full items-center`}>*/}
+                                    {/*    {compareState.compareArray.map((item, index) => (*/}
+                                    {/*        <td className="w-full border border-line h-[60px] border-t-0 border-r-0" key={index}>*/}
+                                    {/*            <div className='h-full flex items-center justify-center capitalize'>*/}
+                                    {/*                Cotton*/}
+                                    {/*            </div>*/}
+                                    {/*        </td>*/}
+                                    {/*    ))}*/}
+                                    {/*</tr>*/}
+                                    {/*<tr className={`flex w-full items-center`}>*/}
+                                    {/*    {compareState.compareArray.map((item, index) => (*/}
+                                    {/*        <td className="w-full border border-line h-[60px] border-t-0 border-r-0" key={index}>*/}
+                                    {/*            <div className='h-full flex items-center justify-center'>*/}
+                                    {/*                <div className='button-main py-1.5 px-5' onClick={() => handleAddToCart(item)}>Add To Cart</div>*/}
+                                    {/*            </div>*/}
+                                    {/*        </td>*/}
+                                    {/*    ))}*/}
+                                    {/*</tr>*/}
                                 </table>
                             </div>
                         </div>

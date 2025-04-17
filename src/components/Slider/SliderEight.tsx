@@ -31,14 +31,14 @@ const SliderEight = () => {
                                     <div className="text-content basis-1/2">
                                         <div className="text-sub-display">NÂNG CẤP NGAY!</div>
                                         <div className="heading1 md:mt-5 mt-2">GIẢM TỚI 70% CHO TÀI KHOẢN PREMIUM!</div>
-                                        <Link href='/shop/breadcrumb' className="button-main md:mt-8 mt-3">Shop Now</Link>
+                                        <Link href='/shop/breadcrumb' className="button-main md:mt-8 mt-3">Mua Ngay</Link>
                                     </div>
-                                    <div className="sub-img absolute lg:w-[54%] sm:w-3/5 w-[92%] lg:-right-[100px] -right-[60px] bottom-0">
+                                    <div className="sub-img absolute z-[-1] xl:w-[55%] sm:w-3/5 w-[86%] xl:-right-[100px] sm:-right-[40px] -right-[40px] sm:-bottom-7 bottom-0">
                                         <Image
-                                            src={'/images/slider/bg8-1.png'}
+                                            src={'/images/slider/bg8-2.png'}
                                             width={2000}
                                             height={1936}
-                                            alt='bg8-1'
+                                            alt='bg8-2'
                                             priority={true}
                                             className='w-full'
                                         />
@@ -52,7 +52,7 @@ const SliderEight = () => {
                                     <div className="text-content basis-1/2">
                                         <div className="text-sub-display">TRẢI NGHIỆM ĐỈNH CAO</div>
                                         <div className="heading1 md:mt-5 mt-2">VỚI TÀI KHOẢN PREMIUM ĐỘC QUYỀN!</div>
-                                        <Link href='/shop/breadcrumb' className="button-main md:mt-8 mt-3">Shop Now</Link>
+                                        <Link href='/shop/breadcrumb' className="button-main md:mt-8 mt-3">Mua Ngay</Link>
                                     </div>
                                     <div className="sub-img absolute z-[-1] xl:w-[55%] sm:w-3/5 w-[86%] xl:-right-[100px] sm:-right-[40px] -right-[40px] sm:-bottom-7 bottom-0">
                                         <Image
@@ -73,14 +73,14 @@ const SliderEight = () => {
                                     <div className="text-content basis-1/2">
                                         <div className="text-sub-display">MỞ KHÓA TẤT CẢ TÍNH NĂNG</div>
                                         <div className="heading1 md:mt-5 mt-2">CHỈ VỚI MỘT CHIẾC KEY!</div>
-                                        <Link href='/shop/breadcrumb' className="button-main md:mt-8 mt-3">Shop Now</Link>
+                                        <Link href='/shop/breadcrumb' className="button-main md:mt-8 mt-3">Mua Ngay</Link>
                                     </div>
-                                    <div className="sub-img absolute lg:w-[57%] sm:w-[63%] w-[90%] xl:-right-[130px] lg:-right-[80px] md:-right-[50px] -right-[50px] bottom-0 md:-bottom-[30px]">
+                                    <div className="sub-img absolute z-[-1] xl:w-[55%] sm:w-3/5 w-[86%] xl:-right-[100px] sm:-right-[40px] -right-[40px] sm:-bottom-7 bottom-0">
                                         <Image
-                                            src={'/images/slider/bg8-3.png'}
+                                            src={'/images/slider/bg8-2.png'}
                                             width={2000}
-                                            height={2000}
-                                            alt='bg8-3'
+                                            height={1936}
+                                            alt='bg8-2'
                                             priority={true}
                                             className='w-full'
                                         />

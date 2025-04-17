@@ -7,6 +7,7 @@ import MenuOne from '@/components/Header/Menu/MenuOne'
 import ShopBreadCrumb1 from '@/components/Shop/ShopBreadCrumb1'
 import productData from '@/data/Product.json'
 import Footer from '@/components/Footer/Footer'
+import {normalizeProductData} from "@/utils/dataHelpers";
 
 export default function BreadCrumb1() {
     const searchParams = useSearchParams()
@@ -14,6 +15,7 @@ export default function BreadCrumb1() {
     let datatype = searchParams.get('type')
     let gender = searchParams.get('gender')
     let category = searchParams.get('category')
+    const normalizedProducts = normalizeProductData(productData);
 
     useEffect(() => {
         setType(datatype);
@@ -26,7 +28,7 @@ export default function BreadCrumb1() {
             <div id="header" className='relative w-full'>
                 <MenuOne props="bg-transparent" />
             </div>
-            <ShopBreadCrumb1 data={productData} productPerPage={9} dataType={type} gender={gender} category={category} />
+            <ShopBreadCrumb1 data={normalizedProducts} productPerPage={9} dataType={type} gender={gender} category={category} />
             <Footer />      
         </>
     )

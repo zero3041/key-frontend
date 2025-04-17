@@ -23,7 +23,7 @@ import { formatVND } from "../formatVND";
 SwiperCore.use([Navigation, Thumbs]);
 
 interface Props {
-  data: Json<ProductType>;
+  data: Array<ProductType>;
   productId: string | number | null;
 }
 

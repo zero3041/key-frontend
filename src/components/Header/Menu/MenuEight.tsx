@@ -1595,7 +1595,7 @@ const MenuEight = () => {
                   href={"/"}
                   className="logo text-3xl font-semibold text-center"
                 >
-                  Anvogue
+                  Push
                 </Link>
               </div>
               <div className="form-search relative mt-2">
@@ -1609,7 +1609,7 @@ const MenuEight = () => {
                   className=" h-12 rounded-lg border border-line text-sm w-full pl-10 pr-4"
                 />
               </div>
-              <div className="list-nav mt-6">
+              {/* <div className="list-nav mt-6">
                 <ul>
                   <li
                     className={`${openSubNavMobile === 1 ? "open" : ""}`}
@@ -3041,7 +3041,7 @@ const MenuEight = () => {
                     </div>
                   </li>
                 </ul>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

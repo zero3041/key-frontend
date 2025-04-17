@@ -13,13 +13,13 @@ interface WishlistState {
 
 type WishlistAction =
     | { type: 'ADD_TO_WISHLIST'; payload: ProductType }
-    | { type: 'REMOVE_FROM_WISHLIST'; payload: string }
+    | { type: 'REMOVE_FROM_WISHLIST'; payload: number }
     | { type: 'LOAD_WISHLIST'; payload: WishlistItem[] }
 
 interface WishlistContextProps {
     wishlistState: WishlistState;
     addToWishlist: (item: ProductType) => void;
-    removeFromWishlist: (itemId: string) => void;
+    removeFromWishlist: (itemId: number) => void;
 }
 
 const WishlistContext = createContext<WishlistContextProps | undefined>(undefined);
@@ -54,7 +54,7 @@ export const WishlistProvider: React.FC<{ children: React.ReactNode }> = ({ chil
         dispatch({ type: 'ADD_TO_WISHLIST', payload: item });
     };
 
-    const removeFromWishlist = (itemId: string) => {
+    const removeFromWishlist = (itemId: number) => {
         dispatch({ type: 'REMOVE_FROM_WISHLIST', payload: itemId });
     };
 

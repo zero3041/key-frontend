@@ -61,7 +61,7 @@ const Grouped: React.FC<Props> = ({ data, productId }) => {
         setActiveSize(item)
     }
 
-    const handleQuantityChange = (newQuantity: number, productId: string) => {
+    const handleQuantityChange = (newQuantity: number, productId: number) => {
         setQuantity(prevQuantity => ({
             ...prevQuantity,
             [productId]: newQuantity,

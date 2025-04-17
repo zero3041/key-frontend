@@ -9,11 +9,13 @@ import Default from "@/components/Product/Detail/Default";
 import Footer from "@/components/Footer/Footer";
 import { ProductType } from "@/type/ProductType";
 import productData from "@/data/Product.json";
+import {normalizeProductData} from "@/utils/dataHelpers";
 
 const ProductDefault = () => {
   const searchParams = useSearchParams();
   let productId = searchParams.get("id");
 
+  const normalizedProducts = normalizeProductData(productData);
 
   if (productId === null) {
     productId = "1";
@@ -30,7 +32,7 @@ const ProductDefault = () => {
           productId={productId}
         />
       </div>
-      <Default data={productData} productId={productId} />
+      <Default data={normalizedProducts} productId={productId} />
       <Footer />
     </>
   );

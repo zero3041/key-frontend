@@ -7,6 +7,7 @@ import BreadcrumbProduct from '@/components/Breadcrumb/BreadcrumbProduct'
 import CountdownTimer from '@/components/Product/Detail/CountdownTimer';
 import Footer from '@/components/Footer/Footer'
 import productData from '@/data/Product.json'
+import {normalizeProductData} from "@/utils/dataHelpers";
 
 const ProductCountdownTimer = () => {
     const searchParams = useSearchParams()
@@ -16,6 +17,8 @@ const ProductCountdownTimer = () => {
         productId = '1'
     }
 
+    const normalizedProducts = normalizeProductData(productData);
+
     return (
         <>
             <TopNavOne props="style-one bg-black" slogan="New customers save 10% with the code GET10" />
@@ -23,7 +26,7 @@ const ProductCountdownTimer = () => {
                 <MenuOne props="bg-white" />
                 <BreadcrumbProduct data={productData} productPage='countdown-timer' productId={productId} />
             </div>
-            <CountdownTimer data={productData} productId={productId} />
+            <CountdownTimer data={normalizedProducts} productId={productId} />
             <Footer />
         </>
     )

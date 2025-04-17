@@ -7,19 +7,20 @@ import MenuOne from '@/components/Header/Menu/MenuOne'
 import ShopSidebarList from '@/components/Shop/ShopSidebarList'
 import productData from '@/data/Product.json'
 import Footer from '@/components/Footer/Footer'
+import {normalizeProductData} from "@/utils/dataHelpers";
 
 export default function DefaultList() {
     const searchParams = useSearchParams()
     const type = searchParams.get('type')
     const category = searchParams.get('category')
-
+    const normalizedProducts = normalizeProductData(productData);
     return (
         <>
             <TopNavOne props="style-one bg-black" slogan="New customers save 10% with the code GET10" />
             <div id="header" className='relative w-full'>
                 <MenuOne props="bg-transparent" />
             </div>
-            <ShopSidebarList data={productData} productPerPage={4} dataType={type} />
+            <ShopSidebarList data={normalizedProducts} productPerPage={4} dataType={type} />
             <Footer />
         </>
     )

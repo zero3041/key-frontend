@@ -11,7 +11,7 @@ import 'rc-slider/assets/index.css'
 import HandlePagination from '../Other/HandlePagination';
 
 interface Props {
-    data: Array<ProductType>;
+    data: Json<ProductType>;
     productPerPage: number
     dataType: string | null
 }
@@ -29,7 +29,6 @@ const ShopBreadCrumbImg: React.FC<Props> = ({ data, productPerPage, dataType }) 
     const [currentPage, setCurrentPage] = useState(0);
     const productsPerPage = productPerPage;
     const offset = currentPage * productsPerPage;
-
     const handleLayoutCol = (col: number) => {
         setLayoutCol(col)
     }
@@ -115,7 +114,7 @@ const ShopBreadCrumbImg: React.FC<Props> = ({ data, productPerPage, dataType }) 
             isBrandMatched = product.brand === brand;
         }
 
-        return isShowOnlySaleMatched && isDataTypeMatched && isTypeMatched && isSizeMatched && isColorMatched && isBrandMatched && isPriceRangeMatched && product.category === 'fashion'
+        return isShowOnlySaleMatched && isDataTypeMatched && isTypeMatched && isSizeMatched && isColorMatched && isBrandMatched && isPriceRangeMatched
     })
 
     // Create a copy array filtered to sort
@@ -217,13 +216,13 @@ const ShopBreadCrumbImg: React.FC<Props> = ({ data, productPerPage, dataType }) 
                             <div className="text-content">
                                 <div className="heading2 text-center">{dataType === null ? 'Shop' : dataType}</div>
                                 <div className="link flex items-center justify-center gap-1 caption1 mt-3">
-                                    <Link href={'/'}>Homepage</Link>
+                                    <Link href={'/'}>Trang chủ</Link>
                                     <Icon.CaretRight size={14} className='text-secondary2' />
-                                    <div className='text-secondary2 capitalize'>{dataType === null ? 'Shop' : dataType}</div>
+                                    <div className='text-secondary2 capitalize'>{dataType === null ? 'Cửa hàng' : dataType}</div>
                                 </div>
                             </div>
                             <div className="list-tab flex flex-wrap items-center justify-center gap-y-5 gap-8 lg:mt-[70px] mt-12 overflow-hidden">
-                                {['t-shirt', 'dress', 'top', 'swimwear', 'shirt'].map((item, index) => (
+                                {['netflix', 'ai', 'youtube'].map((item, index) => (
                                     <div
                                         key={index}
                                         className={`tab-item text-button-uppercase cursor-pointer has-line-before line-2px ${dataType === item ? 'active' : ''}`}
@@ -252,23 +251,23 @@ const ShopBreadCrumbImg: React.FC<Props> = ({ data, productPerPage, dataType }) 
                     <div className="list-product-block relative">
                         <div className="filter-heading flex items-center justify-between gap-5 flex-wrap">
                             <div className="left flex has-line items-center flex-wrap gap-5">
-                                <div
-                                    className="filter-sidebar-btn flex items-center gap-2 cursor-pointer"
-                                    onClick={handleOpenSidebar}
-                                >
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                        <path d="M4 21V14" stroke="#1F1F1F" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                                        <path d="M4 10V3" stroke="#1F1F1F" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                                        <path d="M12 21V12" stroke="#1F1F1F" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                                        <path d="M12 8V3" stroke="#1F1F1F" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                                        <path d="M20 21V16" stroke="#1F1F1F" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                                        <path d="M20 12V3" stroke="#1F1F1F" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                                        <path d="M1 14H7" stroke="#1F1F1F" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                                        <path d="M9 8H15" stroke="#1F1F1F" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                                        <path d="M17 16H23" stroke="#1F1F1F" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                                    </svg>
-                                    <span>Filters</span>
-                                </div>
+                                {/*<div*/}
+                                {/*    className="filter-sidebar-btn flex items-center gap-2 cursor-pointer"*/}
+                                {/*    onClick={handleOpenSidebar}*/}
+                                {/*>*/}
+                                {/*    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">*/}
+                                {/*        <path d="M4 21V14" stroke="#1F1F1F" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />*/}
+                                {/*        <path d="M4 10V3" stroke="#1F1F1F" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />*/}
+                                {/*        <path d="M12 21V12" stroke="#1F1F1F" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />*/}
+                                {/*        <path d="M12 8V3" stroke="#1F1F1F" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />*/}
+                                {/*        <path d="M20 21V16" stroke="#1F1F1F" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />*/}
+                                {/*        <path d="M20 12V3" stroke="#1F1F1F" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />*/}
+                                {/*        <path d="M1 14H7" stroke="#1F1F1F" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />*/}
+                                {/*        <path d="M9 8H15" stroke="#1F1F1F" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />*/}
+                                {/*        <path d="M17 16H23" stroke="#1F1F1F" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />*/}
+                                {/*    </svg>*/}
+                                {/*    <span>Bộ Lọc</span>*/}
+                                {/*</div>*/}
                                 <div className="choose-layout flex items-center gap-2">
                                     <div
                                         className={`item three-col p-2 border border-line rounded flex items-center justify-center cursor-pointer ${layoutCol === 3 ? 'active' : ''}`}
@@ -312,11 +311,11 @@ const ShopBreadCrumbImg: React.FC<Props> = ({ data, productPerPage, dataType }) 
                                         className='border-line'
                                         onChange={handleShowOnlySale}
                                     />
-                                    <label htmlFor="filter-sale" className='cation1 cursor-pointer'>Show only products on sale</label>
+                                    <label htmlFor="filter-sale" className='cation1 cursor-pointer'>Chỉ hiện những sản phẩm giảm giá</label>
                                 </div>
                             </div>
                             <div className="right flex items-center gap-3">
-                                <label htmlFor='select-filter' className="caption1 capitalize">Sort by</label>
+                                <label htmlFor='select-filter' className="caption1 capitalize">Sắp Xếp</label>
                                 <div className="select-block relative">
                                     <select
                                         id="select-filter"
@@ -325,11 +324,11 @@ const ShopBreadCrumbImg: React.FC<Props> = ({ data, productPerPage, dataType }) 
                                         onChange={(e) => { handleSortChange(e.target.value) }}
                                         defaultValue={'Sorting'}
                                     >
-                                        <option value="Sorting" disabled>Sorting</option>
-                                        <option value="soldQuantityHighToLow">Best Selling</option>
-                                        <option value="discountHighToLow">Best Discount</option>
-                                        <option value="priceHighToLow">Price High To Low</option>
-                                        <option value="priceLowToHigh">Price Low To High</option>
+                                        <option value="Sorting" disabled>Sắp xếp</option>
+                                        <option value="soldQuantityHighToLow">Bán chạy nhất</option>
+                                        <option value="discountHighToLow">Giảm giá nhiều nhất</option>
+                                        <option value="priceHighToLow">Giá từ cao đến thấp</option>
+                                        <option value="priceLowToHigh">Giá từ thấp đến cao</option>
                                     </select>
                                     <Icon.CaretDown size={12} className='absolute top-1/2 -translate-y-1/2 md:right-4 right-2' />
                                 </div>
@@ -537,7 +536,7 @@ const ShopBreadCrumbImg: React.FC<Props> = ({ data, productPerPage, dataType }) 
                                 item.id === 'no-data' ? (
                                     <div key={item.id} className="no-data-product">No products match the selected criteria.</div>
                                 ) : (
-                                    <Product key={item.id} data={item} type='grid' />
+                                    <Product key={item.id} data={item} type='grid' style={''} />
                                 )
                             ))}
                         </div>

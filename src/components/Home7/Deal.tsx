@@ -13,9 +13,11 @@ interface Props {
 }
 
 const Deal: React.FC<Props> = ({ data, start, limit }) => {
-    const [timeLeft, setTimeLeft] = useState(countdownTime());
+    const [timeLeft, setTimeLeft] = useState<ReturnType<typeof countdownTime> | null>(null);
 
     useEffect(() => {
+        setTimeLeft(countdownTime());
+
         const timer = setInterval(() => {
             setTimeLeft(countdownTime());
         }, 1000);
@@ -29,21 +31,27 @@ const Deal: React.FC<Props> = ({ data, start, limit }) => {
                 <div className="container">
                     <div className="heading flex items-center justify-between gap-5 flex-wrap">
                         <div className="left flex items-center gap-6 gap-y-3 flex-wrap">
-                            <div className="heading3">Deals of the day</div>
+                            <div className="heading3">Ưu đãi trong ngày</div>
                             <div className="deal-time bg-red py-1 px-5 rounded-lg">
                                 <div className="heading6 text-white">
-                                    <span className='day'>{timeLeft.days}</span>
-                                    <span>D : </span>
-                                    <span className='hour'>{timeLeft.hours}</span>
-                                    <span>H : </span>
-                                    <span className='minute'>{timeLeft.minutes}</span>
-                                    <span>M : </span>
-                                    <span className='second'>{timeLeft.seconds < 10 ? `0${timeLeft.seconds}` : timeLeft.seconds}</span>
-                                    <span>S</span>
+                                    {timeLeft ? (
+                                        <>
+                                            <span className='day'>{timeLeft.days}</span>
+                                            <span>D : </span>
+                                            <span className='hour'>{timeLeft.hours}</span>
+                                            <span>H : </span>
+                                            <span className='minute'>{timeLeft.minutes}</span>
+                                            <span>M : </span>
+                                            <span className='second'>{timeLeft.seconds < 10 ? `0${timeLeft.seconds}` : timeLeft.seconds}</span>
+                                            <span>S</span>
+                                        </>
+                                    ) : (
+                                        <span>Loading...</span>
+                                    )}
                                 </div>
                             </div>
                         </div>
-                        <Link href={'/shop/breadcrumb'} className='text-button pb-1 border-b-2 border-black'>View All Deals</Link>
+                        <Link href={'/shop/breadcrumb'} className='text-button pb-1 border-b-2 border-black'>Xem Tất Cả Ưu Đãi</Link>
                     </div>
 
                     <div className="list-product show-product-sold grid lg:grid-cols-4 grid-cols-2 sm:gap-[30px] gap-[20px] md:mt-10 mt-6">

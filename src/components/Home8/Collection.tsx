@@ -47,7 +47,7 @@ const Collection = () => {
                             className='h-full'
                         >
                             <SwiperSlide>
-                                <div className="collection-item block relative rounded-2xl overflow-hidden cursor-pointer" onClick={() => handleTypeClick('swimwear')}>
+                                <div className="collection-item block relative rounded-2xl overflow-hidden cursor-pointer" onClick={() => handleTypeClick('netflix')}>
                                     <div className="bg-img">
                                         <Image
                                             src={'/images/collection/swimwear.png'}
@@ -60,7 +60,7 @@ const Collection = () => {
                                 </div>
                             </SwiperSlide>
                             <SwiperSlide>
-                                <div className="collection-item block relative rounded-2xl overflow-hidden cursor-pointer" onClick={() => handleTypeClick('top')}>
+                                <div className="collection-item block relative rounded-2xl overflow-hidden cursor-pointer" onClick={() => handleTypeClick('ai')}>
                                     <div className="bg-img">
                                         <Image
                                             src={'/images/collection/top.png'}
@@ -73,7 +73,7 @@ const Collection = () => {
                                 </div>
                             </SwiperSlide>
                             <SwiperSlide>
-                                <div className="collection-item block relative rounded-2xl overflow-hidden cursor-pointer" onClick={() => handleTypeClick('sets')}>
+                                <div className="collection-item block relative rounded-2xl overflow-hidden cursor-pointer" onClick={() => handleTypeClick('design')}>
                                     <div className="bg-img">
                                         <Image
                                             src={'/images/collection/sets.png'}
@@ -86,7 +86,7 @@ const Collection = () => {
                                 </div>
                             </SwiperSlide>
                             <SwiperSlide>
-                                <div className="collection-item block relative rounded-2xl overflow-hidden cursor-pointer" onClick={() => handleTypeClick('outerwear')}>
+                                <div className="collection-item block relative rounded-2xl overflow-hidden cursor-pointer" onClick={() => handleTypeClick('compilot')}>
                                     <div className="bg-img">
                                         <Image
                                             src={'/images/collection/outerwear.png'}
@@ -99,7 +99,7 @@ const Collection = () => {
                                 </div>
                             </SwiperSlide>
                             <SwiperSlide>
-                                <div className="collection-item block relative rounded-2xl overflow-hidden cursor-pointer" onClick={() => handleTypeClick('underwear')}>
+                                <div className="collection-item block relative rounded-2xl overflow-hidden cursor-pointer" onClick={() => handleTypeClick('khac')}>
                                     <div className="bg-img">
                                         <Image
                                             src={'/images/collection/underwear.png'}

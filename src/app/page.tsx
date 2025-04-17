@@ -28,7 +28,7 @@ export default function HomeEight() {
             {/*<Banner />*/}
             <TabFeatures data={productData} start={0} limit={8} />
             {/*<NewsInsight data={blogData} start={0} limit={3} />*/}
-            <Brand />
+            {/*<Brand />*/}
             <Footer />
             {/* <ModalNewsletter /> */}
         </>

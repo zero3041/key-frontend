@@ -7,7 +7,7 @@ import { ProductType } from '@/type/ProductType'
 import { useRouter } from 'next/navigation'
 
 interface Props {
-    data: Array<ProductType>
+    data: Json<ProductType>
     productPage: string | null
     productId: string | number | null
 }
@@ -27,21 +27,21 @@ const BreadcrumbProduct: React.FC<Props> = ({ data, productPage, productId }) =>
                 <div className="main bg-surface md:pt-[88px] pt-[70px] pb-[14px]">
                     <div className="container flex items-center justify-between flex-wrap gap-3">
                         <div className="left flex items-center gap-1">
-                            <Link href={'/'} className='caption1 text-secondary2 hover:underline'>Homepage</Link>
+                            <Link href={'/'} className='caption1 text-secondary2 hover:underline'>Trang chủ</Link>
                             <Icon.CaretRight size={12} className='text-secondary2' />
-                            <div className='caption1 text-secondary2'>Product</div>
+                            <div className='caption1 text-secondary2'>Sản phẩm</div>
                             <Icon.CaretRight size={12} className='text-secondary2' />
-                            <div className='caption1 capitalize'>{`Product ${productPage}`}</div>
+                            <div className='caption1 capitalize'>{`Sản phẩm ${productPage}`}</div>
                         </div>
                         <div className="right flex items-center gap-3">
                             {productId !== null && Number(productId) >= 2 ? (
                                 <>
                                     <div onClick={() => handleDetailProduct(Number(productId) - 1)} className='flex items-center cursor-pointer text-secondary hover:text-black border-r border-line pr-3'>
                                         <Icon.CaretCircleLeft className='text-2xl text-black' />
-                                        <span className='caption1 pl-1'>Previous Product</span>
+                                        <span className='caption1 pl-1'>Sản phẩm trước đó</span>
                                     </div>
                                     <div onClick={() => handleDetailProduct(Number(productId) + 1)} className='flex items-center cursor-pointer text-secondary hover:text-black'>
-                                        <span className='caption1 pr-1'>Next Product</span>
+                                        <span className='caption1 pr-1'>Sản phẩm tiếp theo</span>
                                         <Icon.CaretCircleRight className='text-2xl text-black' />
                                     </div>
                                 </>

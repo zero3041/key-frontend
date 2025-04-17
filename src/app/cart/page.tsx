@@ -27,7 +27,9 @@ const Cart = () => {
 
     const handleQuantityChange = (productId: string, newQuantity: number) => {
         // Tìm sản phẩm trong giỏ hàng
-        const itemToUpdate = cartState.cartArray.find((item) => item.id === productId);
+        const itemToUpdate = cartState.cartArray.find(
+            (item) => item.id === Number(productId)
+        );
 
         // Kiểm tra xem sản phẩm có tồn tại không
         if (itemToUpdate) {

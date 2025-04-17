@@ -354,8 +354,7 @@
             border-color: var(--line);
         }
 
-        &.active,
-        &:hover {
+        &.active {
             border-color: var(--black);
         }
 
@@ -382,10 +381,6 @@
                 z-index: -1;
                 background-color: var(--black);
             }
-        }
-
-        &:hover .tag-action {
-            opacity: 1;
         }
     }
 }
@@ -486,21 +481,17 @@
             border-color: var(--line);
         }
 
-        &:hover {
+        .list-size .size-item:hover {
             border-color: var(--line);
         }
-    }
 
-    .list-size .size-item:hover {
-        border-color: var(--line);
-    }
-
-    .tag-action.bg-black {
-        background-color: var(--white);
-        color: var(--black);
-
-        &::before {
+        .tag-action.bg-black {
             background-color: var(--white);
+            color: var(--black);
+
+            &::before {
+                background-color: var(--white);
+            }
         }
     }
 }

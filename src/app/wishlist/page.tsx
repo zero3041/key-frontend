@@ -118,10 +118,10 @@ const Wishlist = () => {
 
     return (
         <>
-            <TopNavOne props="style-one bg-black" slogan="New customers save 10% with the code GET10" />
+            {/*<TopNavOne props="style-one bg-black" slogan="New customers save 10% with the code GET10" />*/}
             <div id="header" className='relative w-full'>
                 <MenuOne props="bg-transparent" />
-                <Breadcrumb heading='Wish list' subHeading='Wish list' />
+                <Breadcrumb heading='Yêu thích' subHeading='Yêu thích' />
             </div>
             <div className="shop-product breadcrumb1 lg:py-20 md:py-14 py-10">
                 <div className="container">
@@ -165,26 +165,26 @@ const Wishlist = () => {
                                 </div>
                             </div>
                             <div className="right flex items-center gap-3">
-                                <div className="select-block filter-type relative">
-                                    <select
-                                        className='caption1 py-2 pl-3 md:pr-12 pr-8 rounded-lg border border-line capitalize'
-                                        name="select-type"
-                                        id="select-type"
-                                        onChange={(e) => handleType(e.target.value)}
-                                        value={type === undefined ? 'Type' : type}
-                                    >
-                                        <option value="Type" disabled>Type</option>
-                                        {['t-shirt', 'dress', 'top', 'swimwear', 'shirt', 'underwear', 'sets', 'accessories'].map((item, index) => (
-                                            <option
-                                                key={index}
-                                                className={`item cursor-pointer ${type === item ? 'active' : ''}`}
-                                            >
-                                                {item}
-                                            </option>
-                                        ))}
-                                    </select>
-                                    <Icon.CaretDown size={12} className='absolute top-1/2 -translate-y-1/2 md:right-4 right-2' />
-                                </div>
+                                {/*<div className="select-block filter-type relative">*/}
+                                {/*    <select*/}
+                                {/*        className='caption1 py-2 pl-3 md:pr-12 pr-8 rounded-lg border border-line capitalize'*/}
+                                {/*        name="select-type"*/}
+                                {/*        id="select-type"*/}
+                                {/*        onChange={(e) => handleType(e.target.value)}*/}
+                                {/*        value={type === undefined ? 'Type' : type}*/}
+                                {/*    >*/}
+                                {/*        <option value="Type" disabled>Type</option>*/}
+                                {/*        {['t-shirt', 'dress', 'top', 'swimwear', 'shirt', 'underwear', 'sets', 'accessories'].map((item, index) => (*/}
+                                {/*            <option*/}
+                                {/*                key={index}*/}
+                                {/*                className={`item cursor-pointer ${type === item ? 'active' : ''}`}*/}
+                                {/*            >*/}
+                                {/*                {item}*/}
+                                {/*            </option>*/}
+                                {/*        ))}*/}
+                                {/*    </select>*/}
+                                {/*    <Icon.CaretDown size={12} className='absolute top-1/2 -translate-y-1/2 md:right-4 right-2' />*/}
+                                {/*</div>*/}
                                 <div className="select-block relative">
                                     <select
                                         id="select-filter"
@@ -193,11 +193,11 @@ const Wishlist = () => {
                                         onChange={(e) => { handleSortChange(e.target.value) }}
                                         defaultValue={'Sorting'}
                                     >
-                                        <option value="Sorting" disabled>Sorting</option>
-                                        <option value="soldQuantityHighToLow">Best Selling</option>
-                                        <option value="discountHighToLow">Best Discount</option>
-                                        <option value="priceHighToLow">Price High To Low</option>
-                                        <option value="priceLowToHigh">Price Low To High</option>
+                                        <option value="Sorting" disabled>Sắp xếp</option>
+                                        <option value="soldQuantityHighToLow">Bán chạy nhất</option>
+                                        <option value="discountHighToLow">Giảm giá nhiều nhất</option>
+                                        <option value="priceHighToLow">Giá từ cao đến thấp</option>
+                                        <option value="priceLowToHigh">Giá từ thấp đến cao</option>
                                     </select>
                                     <Icon.CaretDown size={12} className='absolute top-1/2 -translate-y-1/2 md:right-4 right-2' />
                                 </div>
@@ -207,7 +207,7 @@ const Wishlist = () => {
                         <div className="list-filtered flex items-center gap-3 mt-4">
                             <div className="total-product">
                                 {totalProducts}
-                                <span className='text-secondary pl-1'>Products Found</span>
+                                <span className='text-secondary pl-1'>Sản phẩm được tìm thấy</span>
                             </div>
                             {
                                 (selectedType) && (

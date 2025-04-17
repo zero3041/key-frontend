@@ -111,19 +111,6 @@ const Collection = () => {
                                     <div className="collection-name heading6 text-center sm:bottom-5 bottom-3 lg:w-[140px] md:w-[120px] w-[100px] md:py-1.5 py-1 bg-white rounded-xl duration-500">Khác</div>
                                 </div>
                             </SwiperSlide>
-                            <SwiperSlide>
-                                <div className="collection-item block relative rounded-2xl overflow-hidden cursor-pointer" onClick={() => handleTypeClick('t-shirt')}>
-                                    <div className="bg-img">
-                                        <Image
-                                            src={'/images/collection/t-shirt.png'}
-                                            width={1000}
-                                            height={600}
-                                            alt='outerwear'
-                                        />
-                                    </div>
-                                    <div className="collection-name heading6 text-center sm:bottom-5 bottom-3 lg:w-[140px] md:w-[120px] w-[100px] md:py-1.5 py-1 bg-white rounded-xl duration-500">t-shirt</div>
-                                </div>
-                            </SwiperSlide>
                         </Swiper>
                     </div>
                 </div>

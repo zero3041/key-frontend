@@ -538,13 +538,13 @@ const Product: React.FC<ProductProps> = ({ data, type, style }) => {
                 <div className="flex items-center justify-between gap-3 gap-y-1 flex-wrap mt-2">
                   <div className="text-button-uppercase">
                     <span className="text-secondary2 max-sm:text-xs">
-                      Sold:{" "}
+                      Đã bán:{" "}
                     </span>
                     <span className="max-sm:text-xs">{data.sold}</span>
                   </div>
                   <div className="text-button-uppercase">
                     <span className="text-secondary2 max-sm:text-xs">
-                      Available:{" "}
+                      Còn:{" "}
                     </span>
                     <span className="max-sm:text-xs">
                       {data.quantity - data.sold}

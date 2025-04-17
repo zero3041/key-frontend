@@ -7,19 +7,20 @@ import MenuOne from '@/components/Header/Menu/MenuOne'
 import ShopFilterOptions from '@/components/Shop/ShopFilterOptions'
 import productData from '@/data/Product.json'
 import Footer from '@/components/Footer/Footer'
+import {normalizeProductData} from "@/utils/dataHelpers";
 
 export default function FilterOptions() {
     const searchParams = useSearchParams()
     const type = searchParams.get('type')
     const category = searchParams.get('category')
-
+    const normalizedProducts = normalizeProductData(productData);
     return (
         <>
             <TopNavOne props="style-one bg-black" slogan="New customers save 10% with the code GET10" />
             <div id="header" className='relative w-full'>
                 <MenuOne props="bg-transparent" />
             </div>
-            <ShopFilterOptions data={productData} productPerPage={12} />
+            <ShopFilterOptions data={normalizedProducts} productPerPage={12} />
             <Footer />
         </>
     )

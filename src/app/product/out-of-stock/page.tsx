@@ -7,6 +7,7 @@ import BreadcrumbProduct from '@/components/Breadcrumb/BreadcrumbProduct'
 import OutOfStock from '@/components/Product/Detail/OutOfStock';
 import Footer from '@/components/Footer/Footer'
 import productData from '@/data/Product.json'
+import {normalizeProductData} from "@/utils/dataHelpers";
 
 const ProductOutOfStock = () => {
     const searchParams = useSearchParams()
@@ -16,6 +17,8 @@ const ProductOutOfStock = () => {
         productId = '1'
     }
 
+    const normalizedProducts = normalizeProductData(productData);
+
     return (
         <>
             <TopNavOne props="style-one bg-black" slogan="New customers save 10% with the code GET10" />
@@ -23,7 +26,7 @@ const ProductOutOfStock = () => {
                 <MenuOne props="bg-white" />
                 <BreadcrumbProduct data={productData} productPage='out-of-stock' productId={productId} />
             </div>
-            <OutOfStock data={productData} productId={productId} />
+            <OutOfStock data={normalizedProducts} productId={productId} />
             <Footer />
         </>
     )

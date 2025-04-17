@@ -7,6 +7,7 @@ import BreadcrumbProduct from '@/components/Breadcrumb/BreadcrumbProduct'
 import FixedPrice from '@/components/Product/Detail/FixedPrice';
 import Footer from '@/components/Footer/Footer'
 import productData from '@/data/Product.json'
+import {normalizeProductData} from "@/utils/dataHelpers";
 
 const ProductFixedPrice = () => {
     const searchParams = useSearchParams()
@@ -16,6 +17,8 @@ const ProductFixedPrice = () => {
         productId = '1'
     }
 
+    const normalizedProducts = normalizeProductData(productData);
+
     return (
         <>
             <TopNavOne props="style-one bg-black" slogan="New customers save 10% with the code GET10" />
@@ -23,7 +26,7 @@ const ProductFixedPrice = () => {
                 <MenuOne props="bg-white" />
                 <BreadcrumbProduct data={productData} productPage='fixed-price' productId={productId} />
             </div>
-            <FixedPrice data={productData} productId={productId} />
+            <FixedPrice data={normalizedProducts} productId={productId} />
             <Footer />
         </>
     )

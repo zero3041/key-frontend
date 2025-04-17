@@ -9,6 +9,7 @@ import Default from '@/components/Product/Detail/Default';
 import Footer from '@/components/Footer/Footer'
 import { ProductType } from '@/type/ProductType'
 import productData from '@/data/Product.json'
+import {normalizeProductData} from "@/utils/dataHelpers";
 
 const ProductThumbnailLeft = () => {
     const searchParams = useSearchParams()
@@ -18,6 +19,8 @@ const ProductThumbnailLeft = () => {
         productId = '1'
     }
 
+    const normalizedProducts = normalizeProductData(productData);
+
     return (
         <>
             <TopNavOne props="style-one bg-black" slogan="New customers save 10% with the code GET10" />
@@ -25,7 +28,7 @@ const ProductThumbnailLeft = () => {
                 <MenuOne props="bg-white" />
                 <BreadcrumbProduct data={productData} productPage='default' productId={productId} />
             </div>
-            <Default data={productData} productId={productId} />
+            <Default data={normalizedProducts} productId={productId} />
             <Footer />
         </>
     )

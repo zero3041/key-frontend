@@ -9,6 +9,7 @@ import Sidebar from '@/components/Product/Detail/Sidebar';
 import Footer from '@/components/Footer/Footer'
 import { ProductType } from '@/type/ProductType'
 import productData from '@/data/Product.json'
+import {normalizeProductData} from "@/utils/dataHelpers";
 
 const ProductSidebar = () => {
     const searchParams = useSearchParams()
@@ -18,6 +19,8 @@ const ProductSidebar = () => {
         productId = '1'
     }
 
+    const normalizedProducts = normalizeProductData(productData);
+
     return (
         <>
             <TopNavOne props="style-one bg-black" slogan="New customers save 10% with the code GET10" />
@@ -25,7 +28,7 @@ const ProductSidebar = () => {
                 <MenuOne props="bg-white" />
                 <BreadcrumbProduct data={productData} productPage='sidebar' productId={productId} />
             </div>
-            <Sidebar data={productData} productId={productId} />
+            <Sidebar data={normalizedProducts} productId={productId} />
             <Footer />
         </>
     )

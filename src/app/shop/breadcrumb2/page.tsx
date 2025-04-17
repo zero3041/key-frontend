@@ -7,11 +7,14 @@ import MenuOne from '@/components/Header/Menu/MenuOne'
 import ShopBreadCrumb2 from '@/components/Shop/ShopBreadCrumb2'
 import productData from '@/data/Product.json'
 import Footer from '@/components/Footer/Footer'
+import {normalizeProductData} from "@/utils/dataHelpers";
 
 export default function BreadCrumb2() {
     const searchParams = useSearchParams()
     const type = searchParams.get('type')
     const category = searchParams.get('category')
+
+    const normalizedProducts = normalizeProductData(productData);
 
     return (
         <>
@@ -19,7 +22,7 @@ export default function BreadCrumb2() {
             <div id="header" className='relative w-full'>
                 <MenuOne props="bg-transparent" />
             </div>
-            <ShopBreadCrumb2 data={productData} productPerPage={9} dataType={type} />
+            <ShopBreadCrumb2 data={normalizedProducts} productPerPage={9} dataType={type} />
             <Footer />
         </>
     )

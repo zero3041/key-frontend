@@ -7,10 +7,13 @@ import MenuOne from '@/components/Header/Menu/MenuOne'
 import ShopFilterCanvas from '@/components/Shop/ShopFilterCanvas'
 import productData from '@/data/Product.json'
 import Footer from '@/components/Footer/Footer'
+import {normalizeProductData} from "@/utils/dataHelpers";
 
 export default function FilterCanvasProductFour() {
     const searchParams = useSearchParams()
     const type = searchParams.get('type')
+
+    const normalizedProducts = normalizeProductData(productData);
 
     return (
         <>
@@ -18,7 +21,7 @@ export default function FilterCanvasProductFour() {
             <div id="header" className='relative w-full'>
                 <MenuOne props="bg-transparent" />
             </div>
-            <ShopFilterCanvas data={productData} productPerPage={12} dataType={type} productStyle='style-4' />
+            <ShopFilterCanvas data={normalizedProducts} productPerPage={12} dataType={type} productStyle='style-4' />
             <Footer />
         </>
     )

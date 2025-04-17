@@ -7,7 +7,7 @@ import { ProductType } from '@/type/ProductType'
 import { useRouter } from 'next/navigation'
 
 interface Props {
-    data: Json<ProductType>
+    data: Array<ProductType>
     productPage: string | null
     productId: string | number | null
 }

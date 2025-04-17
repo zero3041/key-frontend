@@ -7,6 +7,7 @@ import BreadcrumbProduct from '@/components/Breadcrumb/BreadcrumbProduct'
 import Grouped from '@/components/Product/Detail/Grouped';
 import Footer from '@/components/Footer/Footer'
 import productData from '@/data/Product.json'
+import {normalizeProductData} from "@/utils/dataHelpers";
 
 const ProductGrouped = () => {
     const searchParams = useSearchParams()
@@ -16,6 +17,8 @@ const ProductGrouped = () => {
         productId = '1'
     }
 
+    const normalizedProducts = normalizeProductData(productData);
+
     return (
         <>
             <TopNavOne props="style-one bg-black" slogan="New customers save 10% with the code GET10" />
@@ -23,7 +26,7 @@ const ProductGrouped = () => {
                 <MenuOne props="bg-white" />
                 <BreadcrumbProduct data={productData} productPage='grouped' productId={productId} />
             </div>
-            <Grouped data={productData} productId={productId} />
+            <Grouped data={normalizedProducts} productId={productId} />
             <Footer />
         </>
     )

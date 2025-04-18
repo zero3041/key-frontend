@@ -27,7 +27,7 @@ const ProductDefault = () => {
       <div id="header" className="relative w-full">
         <MenuOne props="bg-white" />
         <BreadcrumbProduct
-          data={productData}
+          data={normalizedProducts}
           productPage="Chi tiết"
           productId={productId}
         />

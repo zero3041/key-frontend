@@ -24,7 +24,7 @@ const ProductOutOfStock = () => {
             <TopNavOne props="style-one bg-black" slogan="New customers save 10% with the code GET10" />
             <div id="header" className='relative w-full'>
                 <MenuOne props="bg-white" />
-                <BreadcrumbProduct data={productData} productPage='out-of-stock' productId={productId} />
+                <BreadcrumbProduct data={normalizedProducts} productPage='out-of-stock' productId={productId} />
             </div>
             <OutOfStock data={normalizedProducts} productId={productId} />
             <Footer />

@@ -24,7 +24,7 @@ const ProductTwoScrolling = () => {
             <TopNavOne props="style-one bg-black" slogan="New customers save 10% with the code GET10" />
             <div id="header" className='relative w-full'>
                 <MenuOne props="bg-white" />
-                <BreadcrumbProduct data={productData} productPage='countdown-timer' productId={productId} />
+                <BreadcrumbProduct data={normalizedProducts} productPage='countdown-timer' productId={productId} />
             </div>
             <CountdownTimer data={normalizedProducts} productId={productId} />
             <Footer />

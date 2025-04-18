@@ -24,7 +24,7 @@ const ProductBoughtTogether = () => {
             <TopNavOne props="style-one bg-black" slogan="New customers save 10% with the code GET10" />
             <div id="header" className='relative w-full'>
                 <MenuOne props="bg-white" />
-                <BreadcrumbProduct data={productData} productPage='bought-together' productId={productId} />
+                <BreadcrumbProduct data={normalizedProducts} productPage='bought-together' productId={productId} />
             </div>
             <BoughtTogether data={normalizedProducts} productId={productId} />
             <Footer />

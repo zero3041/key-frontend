@@ -24,7 +24,7 @@ const ProductOneScrolling = () => {
             <TopNavOne props="style-one bg-black" slogan="New customers save 10% with the code GET10" />
             <div id="header" className='relative w-full'>
                 <MenuOne props="bg-white" />
-                <BreadcrumbProduct data={productData} productPage='grouped' productId={productId} />
+                <BreadcrumbProduct data={normalizedProducts} productPage='grouped' productId={productId} />
             </div>
             <Grouped data={normalizedProducts} productId={productId} />
             <Footer />

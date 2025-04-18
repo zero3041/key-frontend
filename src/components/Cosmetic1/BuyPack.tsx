@@ -15,25 +15,25 @@ const BuyPack = () => {
     const { openModalCart } = useModalCartContext()
 
     const handleAddToCart = () => {
-        if (!cartState.cartArray.find(item => item.id === '43')) {
-            addToCart(productData.find(item => item.id === '43') as ProductType)
-            updateCart('43', 1, '', '')
+        if (!cartState.cartArray.find(item => item.id === 43)) {
+            addToCart(productData.find(item => item.id === 43) as ProductType)
+            updateCart(43, 1, '', '')
         }
 
-        if (!cartState.cartArray.find(item => item.id === '44')) {
-            addToCart(productData.find(item => item.id === '44') as ProductType)
-            updateCart('44', 1, '', '')
+        if (!cartState.cartArray.find(item => item.id === 44)) {
+            addToCart(productData.find(item => item.id === 44) as ProductType)
+            updateCart(44, 1, '', '')
         }
 
-        if (!cartState.cartArray.find(item => item.id === '42')) {
-            addToCart(productData.find(item => item.id === '42') as ProductType)
-            updateCart('42', 1, '', '')
+        if (!cartState.cartArray.find(item => item.id === 42)) {
+            addToCart(productData.find(item => item.id === 42) as ProductType)
+            updateCart(42, 1, '', '')
         }
 
         openModalCart()
     };
 
-    const handleDetailProduct = (productId: string) => {
+    const handleDetailProduct = (productId: number) => {
         // redirect to shop with category selected
         router.push(`/product/default?id=${productId}`);
     };
@@ -46,7 +46,7 @@ const BuyPack = () => {
                         <div className="heading3">Cosmetic Cream packs</div>
                         <div className="block mt-3">Sign up for early sale access, new in, promotions and more</div>
                         <div className="list-product mt-8">
-                            <div className='product-item pb-5 border-b border-line cursor-pointer' onClick={() => handleDetailProduct('43')}>
+                            <div className='product-item pb-5 border-b border-line cursor-pointer' onClick={() => handleDetailProduct(43)}>
                                 <div className="product-main flex items-center justify-between">
                                     <div className="left flex items-center gap-7">
                                         <Image
@@ -65,7 +65,7 @@ const BuyPack = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className='product-item pb-5 border-b border-line cursor-pointer mt-5' onClick={() => handleDetailProduct('44')}>
+                            <div className='product-item pb-5 border-b border-line cursor-pointer mt-5' onClick={() => handleDetailProduct(44)}>
                                 <div className="product-main flex items-center justify-between">
                                     <div className="left flex items-center gap-7">
                                         <Image
@@ -84,7 +84,7 @@ const BuyPack = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className='product-item pb-5 border-b border-line cursor-pointer mt-5' onClick={() => handleDetailProduct('42')}>
+                            <div className='product-item pb-5 border-b border-line cursor-pointer mt-5' onClick={() => handleDetailProduct(42)}>
                                 <div className="product-main flex items-center justify-between">
                                     <div className="left flex items-center gap-7">
                                         <Image
@@ -126,7 +126,7 @@ const BuyPack = () => {
                                 <div className="top-dot w-8 h-8 rounded-full bg-outline flex items-center justify-center">
                                     <span className="bg-white w-3 h-3 rounded-full duration-300"></span>
                                 </div>
-                                <div className="product-infor bg-white rounded-2xl p-4" onClick={() => handleDetailProduct('43')}>
+                                <div className="product-infor bg-white rounded-2xl p-4" onClick={() => handleDetailProduct(43)}>
                                     <div className="text-title name">Hair Treatment</div>
                                     <div className="price text-center">$10.00</div>
                                     <div
@@ -139,7 +139,7 @@ const BuyPack = () => {
                                 <div className="w-8 h-8 rounded-full bg-outline flex items-center justify-center">
                                     <span className="bg-white w-3 h-3 rounded-full duration-300"></span>
                                 </div>
-                                <div className="product-infor bg-white rounded-2xl p-4" onClick={() => handleDetailProduct('44')}>
+                                <div className="product-infor bg-white rounded-2xl p-4" onClick={() => handleDetailProduct(44)}>
                                     <div className="text-title name">After Sun - tan Booster</div>
                                     <div className="price text-center">$15.00</div>
                                     <div

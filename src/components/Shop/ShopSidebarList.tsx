@@ -153,7 +153,7 @@ const ShopSidebarList: React.FC<Props> = ({
   if (filteredData.length === 0) {
     filteredData = [
       {
-        id: "no-data",
+        id: 0,
         category: "no-data",
         type: "no-data",
         name: "no-data",
@@ -543,12 +543,12 @@ const ShopSidebarList: React.FC<Props> = ({
 
               <div className="list-product hide-product-sold flex flex-col gap-8 mt-7">
                 {currentProducts.map((item) =>
-                  item.id === "no-data" ? (
+                  item.id === 0 ? (
                     <div key={item.id} className="no-data-product">
                       No products match the selected criteria.
                     </div>
                   ) : (
-                    <Product key={item.id} data={item} type="list" />
+                    <Product key={item.id} data={item} type="list" style={""} />
                   )
                 )}
               </div>

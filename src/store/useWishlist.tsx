@@ -16,7 +16,7 @@ const useWishlist = () => {
         setWishlist((prevWishlist) => [...prevWishlist, newItem]);
     };
 
-    const removeFromWishlist = (productId: string) => {
+    const removeFromWishlist = (productId: number) => {
         setWishlist((prevWishlist) =>
             prevWishlist.map(item => ({
                 product: item.product.filter(prd => prd.id !== productId)

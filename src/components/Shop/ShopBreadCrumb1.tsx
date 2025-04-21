@@ -168,7 +168,7 @@ const ShopBreadCrumb1: React.FC<Props> = ({
   if (filteredData.length === 0) {
     filteredData = [
       {
-        id: "no-data",
+        id: 0,
         category: "no-data",
         type: "no-data",
         name: "no-data",
@@ -560,7 +560,7 @@ const ShopBreadCrumb1: React.FC<Props> = ({
 
               <div className="list-product hide-product-sold grid lg:grid-cols-4 grid-cols-2 sm:gap-[30px] gap-[20px] mt-7">
                 {currentProducts.map((item) =>
-                  item.id === "no-data" ? (
+                  item.id === 0 ? (
                     <div key={item.id} className="no-data-product">
                       No products match the selected criteria.
                     </div>

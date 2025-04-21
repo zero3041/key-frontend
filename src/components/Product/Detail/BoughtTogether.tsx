@@ -429,8 +429,8 @@ const BoughtTogether: React.FC<Props> = ({ data, productId }) => {
                                     {data.slice(Number(productId), Number(productId) + 3).map((item) => (
                                         <div className="item flex items-center gap-3 mt-2" key={item.id}>
                                             <div className="flex items-center gap-2">
-                                                <input type="checkbox" name={item.id} id={item.id} />
-                                                <label htmlFor={item.id} className='text-title'>{item.name}</label>
+                                                <input type="checkbox" name={String(item.id)} id={String(item.id)} />
+                                                <label htmlFor={String(item.id)} className='text-title'>{item.name}</label>
                                             </div>
                                             <div className="select-block relative w-fit">
                                                 <select

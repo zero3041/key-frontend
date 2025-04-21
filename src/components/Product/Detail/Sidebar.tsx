@@ -62,7 +62,7 @@ const Sidebar: React.FC<Props> = ({ data, productId }) => {
         router.push(`/shop/breadcrumb1?type=${type}`);
     };
 
-    const handleProductClick = (productId: string) => {
+    const handleProductClick = (productId: number) => {
         router.push(`/product/sidebar?id=${productId}`);
     };
 

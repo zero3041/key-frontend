@@ -11,7 +11,7 @@ import 'rc-slider/assets/index.css'
 import HandlePagination from '../Other/HandlePagination';
 
 interface Props {
-    data: Json<ProductType>;
+    data: Array<ProductType>;
     productPerPage: number
     dataType: string | null
 }
@@ -149,7 +149,7 @@ const ShopBreadCrumbImg: React.FC<Props> = ({ data, productPerPage, dataType }) 
 
     if (filteredData.length === 0) {
         filteredData = [{
-            id: 'no-data',
+            id: 0,
             category: 'no-data',
             type: 'no-data',
             name: 'no-data',
@@ -533,7 +533,7 @@ const ShopBreadCrumbImg: React.FC<Props> = ({ data, productPerPage, dataType }) 
 
                         <div className={`list-product hide-product-sold grid lg:grid-cols-${layoutCol} sm:grid-cols-3 grid-cols-2 sm:gap-[30px] gap-[20px] mt-7`}>
                             {currentProducts.map((item) => (
-                                item.id === 'no-data' ? (
+                                item.id === 0 ? (
                                     <div key={item.id} className="no-data-product">No products match the selected criteria.</div>
                                 ) : (
                                     <Product key={item.id} data={item} type='grid' style={''} />

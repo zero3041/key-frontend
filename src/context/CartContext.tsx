@@ -16,10 +16,10 @@ interface CartState {
 
 type CartAction =
     | { type: 'ADD_TO_CART'; payload: ProductType }
-    | { type: 'REMOVE_FROM_CART'; payload: string }
+    | { type: 'REMOVE_FROM_CART'; payload: number }
     | {
         type: 'UPDATE_CART'; payload: {
-            itemId: string; quantity: number, selectedSize: string, selectedColor: string
+            itemId: number; quantity: number, selectedSize: string, selectedColor: string
         }
     }
     | { type: 'LOAD_CART'; payload: CartItem[] }
@@ -77,11 +77,11 @@ export const CartProvider: React.FC<{ children: React.ReactNode }> = ({ children
         dispatch({ type: 'ADD_TO_CART', payload: item });
     };
 
-    const removeFromCart = (itemId: string) => {
+    const removeFromCart = (itemId: number) => {
         dispatch({ type: 'REMOVE_FROM_CART', payload: itemId });
     };
 
-    const updateCart = (itemId: string, quantity: number, selectedSize: string, selectedColor: string) => {
+    const updateCart = (itemId: number, quantity: number, selectedSize: string, selectedColor: string) => {
         dispatch({ type: 'UPDATE_CART', payload: { itemId, quantity, selectedSize, selectedColor } });
     };
 

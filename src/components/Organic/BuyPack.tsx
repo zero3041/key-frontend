@@ -15,25 +15,25 @@ const BuyPack = () => {
     const { openModalCart } = useModalCartContext()
 
     const handleAddToCart = () => {
-        if (!cartState.cartArray.find(item => item.id === '123')) {
-            addToCart(productData.find(item => item.id === '123') as ProductType)
-            updateCart('123', 1, '', '')
+        if (!cartState.cartArray.find(item => item.id === 123)) {
+            addToCart(productData.find(item => item.id === 123) as ProductType)
+            updateCart(123, 1, '', '')
         }
 
-        if (!cartState.cartArray.find(item => item.id === '124')) {
-            addToCart(productData.find(item => item.id === '124') as ProductType)
-            updateCart('124', 1, '', '')
+        if (!cartState.cartArray.find(item => item.id === 124)) {
+            addToCart(productData.find(item => item.id === 124) as ProductType)
+            updateCart(124, 1, '', '')
         }
 
-        if (!cartState.cartArray.find(item => item.id === '125')) {
-            addToCart(productData.find(item => item.id === '125') as ProductType)
-            updateCart('125', 1, '', '')
+        if (!cartState.cartArray.find(item => item.id === 125)) {
+            addToCart(productData.find(item => item.id === 125) as ProductType)
+            updateCart(125, 1, '', '')
         }
 
         openModalCart()
     };
 
-    const handleDetailProduct = (productId: string) => {
+    const handleDetailProduct = (productId: number) => {
         // redirect to shop with category selected
         router.push(`/product/default?id=${productId}`);
     };
@@ -59,7 +59,7 @@ const BuyPack = () => {
                         <div className="main-content text-white lg:pr-[84px] sm:pr-12 w-full">
                             <div className="list-product md:mt-10 mt-6">
                                 <div className='product-item pb-5 border-b border-line'>
-                                    <div className="product-main flex items-center justify-between cursor-pointer" onClick={() => handleDetailProduct('123')}>
+                                    <div className="product-main flex items-center justify-between cursor-pointer" onClick={() => handleDetailProduct(123)}>
                                         <div className="left flex items-center gap-7">
                                             <Image
                                                 src={'/images/product/1000x1000.png'}
@@ -79,7 +79,7 @@ const BuyPack = () => {
                                     </div>
                                 </div>
                                 <div className='product-item pb-5 border-b border-line mt-5'>
-                                    <div className="product-main flex items-center justify-between cursor-pointer" onClick={() => handleDetailProduct('124')}>
+                                    <div className="product-main flex items-center justify-between cursor-pointer" onClick={() => handleDetailProduct(124)}>
                                         <div className="left flex items-center gap-7">
                                             <Image
                                                 src={'/images/product/1000x1000.png'}
@@ -99,7 +99,7 @@ const BuyPack = () => {
                                     </div>
                                 </div>
                                 <div className='product-item pb-5 border-b border-line mt-5'>
-                                    <div className="product-main flex items-center justify-between cursor-pointer" onClick={() => handleDetailProduct('125')}>
+                                    <div className="product-main flex items-center justify-between cursor-pointer" onClick={() => handleDetailProduct(125)}>
                                         <div className="left flex items-center gap-7">
                                             <Image
                                                 src={'/images/product/1000x1000.png'}
@@ -141,7 +141,7 @@ const BuyPack = () => {
                                     <div className="top-dot w-8 h-8 rounded-full bg-outline flex items-center justify-center">
                                         <span className="bg-white w-3 h-3 rounded-full duration-300"></span>
                                     </div>
-                                    <div className="product-infor bg-white rounded-2xl p-4 cursor-pointer" onClick={() => handleDetailProduct('123')}>
+                                    <div className="product-infor bg-white rounded-2xl p-4 cursor-pointer" onClick={() => handleDetailProduct(123)}>
                                         <div className="text-title name">green cabbage</div>
                                         <div className="price text-center">$10.00</div>
                                         <div
@@ -154,7 +154,7 @@ const BuyPack = () => {
                                     <div className="top-dot w-8 h-8 rounded-full bg-outline flex items-center justify-center">
                                         <span className="bg-white w-3 h-3 rounded-full duration-300"></span>
                                     </div>
-                                    <div className="product-infor bg-white rounded-2xl p-4 cursor-pointer" onClick={() => handleDetailProduct('124')}>
+                                    <div className="product-infor bg-white rounded-2xl p-4 cursor-pointer" onClick={() => handleDetailProduct(124)}>
                                         <div className="text-title name">purple cabbage</div>
                                         <div className="price text-center">$10.00</div>
                                         <div
@@ -167,7 +167,7 @@ const BuyPack = () => {
                                     <div className="w-8 h-8 rounded-full bg-outline flex items-center justify-center">
                                         <span className="bg-white w-3 h-3 rounded-full duration-300"></span>
                                     </div>
-                                    <div className="product-infor bg-white rounded-2xl p-4 cursor-pointer" onClick={() => handleDetailProduct('125')}>
+                                    <div className="product-infor bg-white rounded-2xl p-4 cursor-pointer" onClick={() => handleDetailProduct(125)}>
                                         <div className="text-title name">green cabbage</div>
                                         <div className="price text-center">$15.00</div>
                                         <div
